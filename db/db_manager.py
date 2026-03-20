@@ -11,13 +11,14 @@ def manage_operation(jd):
     cur=conn.cursor()
     for i in jd:
         cur.execute(
-                'INSERT OR IGNORE INTO jobs(j_title,location,salary,status,company) values(?,?,?,?,?)',
+                'INSERT OR IGNORE INTO jobs(j_title,location,salary,status,company,scraped_time) values(?,?,?,?,?,?)',
                 (
                     i['job'],
                     i['Location'],
                     i['Salary'],
                     i['status'],
-                    i['company']
+                    i['company'],
+                    i['Scrape_time']
                 )
                 )
         job_id=cur.lastrowid
@@ -48,3 +49,15 @@ def manage_operation(jd):
     
     conn.commit()  #commit the changes
     conn.close()    #close the connection
+
+
+def clearTable():
+    conn=sqlite3.connect("jobs.db")
+    cur=conn.cursor()
+    # cur.execute('DELETE FROM jobs')
+    # cur.execute('DELETE FROM skills')
+    cur.execute('DELETE FROM job_skills')
+    conn.commit()
+    conn.close()
+
+

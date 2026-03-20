@@ -1,5 +1,6 @@
 
 def scrape_data(soup):
+    from datetime import datetime
     import sqlite3
     #Connect to the Database file 
     conn=sqlite3.connect("jobs.db")
@@ -20,13 +21,16 @@ def scrape_data(soup):
         techstack=[skil.text.strip() for skil in skills ] if skills else None
         #Extract the location of the job
         location = job.select_one("p.locations a").get_text(strip=True) if job.select_one("p.locations a") else None
+
+        scrape_time=datetime.now().strftime("%Y-%m-%d %H:%M:%S")
       
         jd={"job":jobb,
             "company":comp,
             "status":status,
             "Salary":sal,
             "TechStack":techstack ,
-            "Location":location 
+            "Location":location ,
+            "Scrape_time":scrape_time
             }
         job_data.append(jd)
        

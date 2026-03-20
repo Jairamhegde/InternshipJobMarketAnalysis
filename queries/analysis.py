@@ -63,7 +63,39 @@ ORDER BY total_occurrences DESC;
     df=pd.read_sql_query(query,conn)
     conn.close()
     return df
+def TopSkillsOfRole(role):
+    conn=sqlite3.connect(db_path)
+    query='''
+    SELECT s.name,count(*) as demand
+    FROM jobs j
+    JOIN job_skills js ON j.j_id = js.job_id
+    JOIN skills s ON s.s_id = js.skill_id
+    WHERE j.j_title = ?
+    GROUP BY s.name
+    ORDER BY demand DESC
+    LIMIT 10;
+    '''
+    df=pd.read_sql_query(query,conn,params=(role,))
+    conn.close()
+    return df
+def jobCount(job):
+    conn=sqlite3.connect(db_path)
+    query='''
+    SELECT count(J_title) as no_of_jobs
+    FROM jobs
+    WHERE J_title=?;
+'''
+    df=pd.read_sql_query(query,conn,params=(job,))
+    conn.close()
+    return df
+def sortRoles(role):
+    conn=sqlite3.connect(db_path)
+    query='''
+SELECT job,count(job) jobcount,
+FROM jobs
 
-# print(roles())
-print(commonRoles())
+'''
+
+
+# print(commonRoles())
 
