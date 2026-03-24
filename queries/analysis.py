@@ -2,9 +2,11 @@ import sqlite3
 import pandas as pd
 
 
-
+import os
+BASE_DIR=os.path.commonpath(__file__)
+db_path=os.path.join(BASE_DIR,"jobs.db")
 def topSkills():
-    db_path = 'jobs.db'
+    # db_path = 'jobs.db'
     conn = sqlite3.connect(db_path)
     query = '''
     SELECT s.name, count(*) as demand
@@ -18,7 +20,7 @@ def topSkills():
     conn.close()
     return df
 def roles():
-    db_path = 'jobs.db'
+    # db_path = 'jobs.db'
     conn=sqlite3.connect(db_path)
     query='''
     SELECT j.j_title,count(*) as demand
@@ -31,7 +33,7 @@ def roles():
     conn.close()
     return df
 def topLocations():
-    db_path = 'jobs.db'
+    # db_path = 'jobs.db'
     conn=sqlite3.connect(db_path)
     query='''
     SELECT j.location ,count(j.location) as count
@@ -44,7 +46,7 @@ def topLocations():
     conn.close()
     return df
 def commonRoles():
-    db_path = 'jobs.db'
+    # db_path = 'jobs.db'
     conn=sqlite3.connect(db_path)
     query='''
         SELECT
@@ -70,7 +72,7 @@ ORDER BY total_occurrences DESC;
     conn.close()
     return df
 def TopSkillsOfRole(role):
-    db_path = 'jobs.db'
+    # db_path = 'jobs.db'
     conn=sqlite3.connect(db_path)
     query='''
     SELECT s.name,count(*) as demand
@@ -86,7 +88,7 @@ def TopSkillsOfRole(role):
     conn.close()
     return df
 def jobCount(job):
-    db_path = 'jobs.db'
+    # db_path = 'jobs.db'
     conn=sqlite3.connect(db_path)
     query='''
     SELECT count(J_title) as no_of_jobs
@@ -97,7 +99,7 @@ def jobCount(job):
     conn.close()
     return df
 def sortRoles(role):
-    db_path = 'jobs.db'
+    # db_path = 'jobs.db'
     conn=sqlite3.connect(db_path)
     query='''
 SELECT job,count(job) jobcount,
@@ -105,7 +107,7 @@ FROM jobs
 
 '''
 def last_scraped_time():
-    db_path = 'jobs.db'
+    # db_path = 'jobs.db'
     conn=sqlite3.connect(db_path)
 
     query='''

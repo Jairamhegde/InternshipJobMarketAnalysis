@@ -32,7 +32,7 @@ def internshala(url):
             else:
                 link=url+f'page-{i}'
         try:
-            g=get_soup(url)
+            g=get_soup(link)
             x=scrape_data(g)
                 
             logging.info(f"Scraped data from page {i}")
