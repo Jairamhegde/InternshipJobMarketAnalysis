@@ -3,7 +3,7 @@ import pandas as pd
 
 
 import os
-BASE_DIR=os.path.commonpath(__file__)
+BASE_DIR=os.path.dirname(__file__)
 db_path=os.path.join(BASE_DIR,"jobs.db")
 def topSkills():
     # db_path = 'jobs.db'
