@@ -4,9 +4,12 @@ import sqlite3
 # from pathlib import Path
 # BASE_DIR = Path(__file__).resolve().parent.parent
 
- 
+import os
+BASE_DIR=os.path.dirname(__file__)
+db_path=os.path.join(BASE_DIR,"jobs.db")
+
 def manage_operation(jd):
-    conn=sqlite3.connect('jobs.db')
+    conn=sqlite3.connect(db_path)
    
     cur=conn.cursor()
     for i in jd:
@@ -52,7 +55,7 @@ def manage_operation(jd):
 
 
 def clearTable():
-    conn=sqlite3.connect("jobs.db")
+    conn=sqlite3.connect(db_path)
     cur=conn.cursor()
     # cur.execute('DELETE FROM jobs')
     # cur.execute('DELETE FROM skills')
