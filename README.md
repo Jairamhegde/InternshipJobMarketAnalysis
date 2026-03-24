@@ -65,6 +65,9 @@ This design allows:
 
 ---
 
+##Live demo
+https://internshipjobmarketanalysis.streamlit.app/
+
 ## Key Analyses Performed
 
 - Top demanded internship skills
