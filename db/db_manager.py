@@ -59,8 +59,10 @@ def clearTable():
     cur=conn.cursor()
     # cur.execute('DELETE FROM jobs')
     # cur.execute('DELETE FROM skills')
-    cur.execute('DELETE FROM job_skills')
+    cur.execute('DELETE FROM skills')
     conn.commit()
     conn.close()
+
+
 
 

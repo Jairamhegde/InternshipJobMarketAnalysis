@@ -13,25 +13,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
-# if "data_loaded" not in st.session_state:
-#     st.session_state.data_loaded = False
 
-# Custom CSS for better styling
-# def takeuserInput():
-#     from mainscrip import internshala
-#     if not st.session_state.data_loaded:
-#         pages=10
-#         progress=st.progress(0)
-#         for i in range(1,pages+1):
-#             if i==1:
-#                 link="https://internshala.com/jobs/ai-agent-development,backend-development-jobs/"
-#             else:
-#                 link="https://internshala.com/jobs/ai-agent-development,backend-development-jobs/"+f'page-{i}'
-#             internshala(link)
-#             progress.progress(i/pages)
-#         st.session_state.data_loaded=True
-#         st.success("Scraping completed successfully!")
-#         logging.info("Data scraped..")
      
 def load_dashboard():
     st.markdown("""
@@ -74,11 +56,7 @@ def load_dashboard():
             'locations': topLocations(),
             'common_roles': commonRoles()
         }
-    # roles= roles(),
-    # skills= topSkills(),
-    # 'locations': topLocations(),
-    # 'common_roles': commonRoles()
-
+  
     data = load_all_data()
     df_roles = data['roles']
     df_skills = data['skills']
@@ -104,14 +82,7 @@ def load_dashboard():
         total_unique_roles = len(df_roles)
         total_unique_skills = len(df_skills)
         
-        # st.metric("Total Job Postings", f"{total_job_count:,}")
-        # st.metric("Unique Roles", f"{total_unique_roles}")
-        # st.metric("Unique Skills", f"{total_unique_skills}")
-        
-        # st.markdown("---")
-        # st.caption("Data updated in real-time from jobs database")
-
-    # ================= HEADER =================
+       
     st.title("Internship Job Market Analysis ")
 
 
@@ -433,7 +404,7 @@ def load_dashboard():
 
     # PAGE: COMPARATIVE ANALYSIS
     elif page == "Comparative Analysis":
-        # st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
+       
         
         st.subheader("Compare Multiple Roles")
         st.markdown("#### Analyze and compare different roles side by side")
@@ -564,11 +535,7 @@ def load_dashboard():
 
 
 
-        # progress=st.progress(0)
-        # for i in range(pages+1):
-        #     progress.progress(i/pages+1)
-        #     time.sleep(0.2)
-
+       
 load_dashboard()
 st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 st.markdown("---")

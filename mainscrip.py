@@ -30,16 +30,16 @@ def internshala(url):
             if i==1:
                 link=url
             else:
-                link=url+f'page-{i}'
-        try:
-            g=get_soup(link)
-            x=scrape_data(g)
+                    link=url+f'page-{i}'
+            try:
+                g=get_soup(link)
+                x=scrape_data(g)
+                    
+                logging.info(f"Scraped data from page {i}")
+                manage_operation(x)
                 
-            logging.info(f"Scraped data from page {i}")
-            manage_operation(x)
-              
-        except Exception as e:
-             logging.error("error while scraping..")
+            except Exception as e:
+                logging.error("error while scraping..")
 
         
          
@@ -49,6 +49,6 @@ def run_streamlit():
         sys.executable, "-m", "streamlit", "run", "app.py"
     ])
      
-# if __name__=='__main__':
-#     internshala("https://internshala.com/jobs/ai-agent-development,backend-development-jobs/",takeuserInput())   
-#     run_streamlit()
+if __name__=='__main__':
+    internshala("https://internshala.com/jobs/ai-agent-development,backend-development-jobs/")   
+    run_streamlit()

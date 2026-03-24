@@ -13,10 +13,23 @@ cur=conn.cursor()
 #     'CREATE UNIQUE INDEX IF NOT EXISTS idx_job_unique ON jobs (j_title, company, location)'
 # )
 # logging.info("Aded unique contrain on jobs")
+# cur.execute(
+
+#     "ALTER TABLE jobs RENAME COLUMN acraped_time TO scraped_time"
+# )
+
+# cur.execute(
+#     "alter table skills rename to old_skil"
+# )
+# logging.info("Added scraped_time column to jobs table")
 cur.execute(
 
-    "ALTER TABLE jobs RENAME COLUMN acraped_time TO scraped_time"
+    '''
+CREATE TABLE skills(
+s_id integer primary key autoincrement,
+name text unique
+);'''
 )
-# logging.info("Added scraped_time column to jobs table")
+
 conn.commit()
 conn.close()

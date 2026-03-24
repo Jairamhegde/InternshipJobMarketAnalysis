@@ -62,7 +62,12 @@ FROM ranked_roles
 WHERE rank <= 3
 ORDER BY hour, role_count DESC;
 '''
-query=pd.read_sql_query(mont_year,conn)
+
+skill="""
+
+SELECT count(distinct(name)) FROM skills;
+"""
+query=pd.read_sql_query(skill,conn)
 print(query)
 
 # query=pd.read_sql_query(trends,conn)
