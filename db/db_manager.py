@@ -5,8 +5,8 @@ import sqlite3
 # BASE_DIR = Path(__file__).resolve().parent.parent
 
 import os
-BASE_DIR=os.path.dirname(__file__)
-db_path=os.path.join(BASE_DIR,"jobs.db")
+BASE_DIR = os.path.dirname(os.path.dirname(__file__)) 
+db_path = os.path.join(BASE_DIR, "jobs.db")
 
 def manage_operation(jd):
     conn=sqlite3.connect(db_path)
