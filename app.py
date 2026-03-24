@@ -2,11 +2,10 @@ import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
-from queries.analysis import roles, TopSkillsOfRole, jobCount, topSkills, topLocations, commonRoles
+from queries.analysis import roles, TopSkillsOfRole, jobCount, topSkills, topLocations, commonRoles, last_scraped_time
 import pandas as pd
-import time
+import logging
 
-from mainscrip import internshala
 
 # Page configuration
 st.set_page_config(
@@ -18,6 +17,22 @@ if "data_loaded" not in st.session_state:
     st.session_state.data_loaded = False
 
 # Custom CSS for better styling
+def takeuserInput():
+    from mainscrip import internshala
+    if not st.session_state.data_loaded:
+        pages=10
+        progress=st.progress(0)
+        for i in range(1,pages+1):
+            if i==1:
+                link="https://internshala.com/jobs/ai-agent-development,backend-development-jobs/"
+            else:
+                link="https://internshala.com/jobs/ai-agent-development,backend-development-jobs/"+f'page-{i}'
+            internshala(link)
+            progress.progress(i/pages)
+        st.session_state.data_loaded=True
+        st.success("Scraping completed successfully!")
+        logging.info("Data scraped..")
+     
 def load_dashboard():
     st.markdown("""
     <style>
@@ -76,12 +91,13 @@ def load_dashboard():
         
         page = st.radio(
             "Select View",
-            ["Overall Market Trends", "Role-Specific Analysis", "Comparative Analysis"],
+            ["Overall Market Trends", "Role-Specific Analysis", "Comparative Analysis","Trends Over Time"],
             index=0
         )
-        
-    
-        
+        if st.button("SCRAPE DATA"):
+            takeuserInput()
+
+  
         # Stats summary in sidebar
 
         total_job_count = df_roles['demand'].sum()
@@ -278,9 +294,7 @@ def load_dashboard():
 
     # PAGE: ROLE-SPECIFIC ANALYSIS 
     elif page == "Role-Specific Analysis":
-        # st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
-        
-        # Role selection
+     
         st.subheader("Select a Role to Analyze")
         
         col1, col2 = st.columns([2, 1])
@@ -492,14 +506,6 @@ def load_dashboard():
 
             import numpy as np
 
-            sorted=np.sort(df_comparison['Jobs'])
-            scatter=px.line(df_comparison,
-                            x='',
-                            
-            
-                            )
-            st.plotly_chart(scatter)
-            
             # Skills comparison heatmap
             st.subheader("Skills Overlap Analysis")
             
@@ -551,36 +557,21 @@ def load_dashboard():
                     st.write(", ".join(common_skills[:10]) + ("..." if len(common_skills) > 10 else ""))
         else:
             st.warning("Please select at least 2 roles to compare")
-
+    elif page == "Trends Over Time":
+        st.subheader("Treds over time")
+        st.dataframe(data)
     # Footer
-def takeuserInput():
-    if not st.session_state.data_loaded:
 
-        pages=st.number_input("Enter number of pages to scrape", min_value=1, max_value=20, value=5, step=1)
-        if st.button(label="Start scraping"):
-            progress=st.progress(0)
-            for i in range(1,pages+1):
-                if i==1:
-                    link="https://internshala.com/jobs/ai-agent-development,backend-development-jobs/"
-                else:
-                    link="https://internshala.com/jobs/ai-agent-development,backend-development-jobs/"+f'page-{i}'
-                internshala(link)
-                progress.progress(i/pages)
-            st.session_state.data_loaded=True
-            st.success("Scraping completed successfully!")
-            load_dashboard()
-    else:
-        load_dashboard()
 
-takeuserInput()
 
         # progress=st.progress(0)
         # for i in range(pages+1):
         #     progress.progress(i/pages+1)
         #     time.sleep(0.2)
 
-
+load_dashboard()
 st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 st.markdown("---")
-st.caption("Job Market Intelligence Dashboard | Data powered by job scraper analysis")
-# st.caption("Tip: Use the sidebar to navigate between different views and analyses")
+st.caption("Internship Job Market Analysis")
+st.caption("Last scraped on :"+f"{last_scraped_time()}")
+

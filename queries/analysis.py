@@ -95,7 +95,15 @@ SELECT job,count(job) jobcount,
 FROM jobs
 
 '''
+def last_scraped_time():
+    conn=sqlite3.connect(db_path)
 
+    query='''
+    SELECT max(scraped_time)
+    from jobs;'''
+    df=pd.read_sql_query(query,conn)
+    conn.close()
+    return df
 
 # print(commonRoles())
 

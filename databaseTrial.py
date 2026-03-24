@@ -22,8 +22,51 @@ WHERE J_title='Full Stack Developer';
 '''
 desc='''PRAGMA table_info(jobs);
 '''
-query=pd.read_sql_query(desc,conn)
+
+trends='''
+    SELECT J_title ,count(J_title) as NO_of_jobs,scraped_time
+    FROM jobs
+    GROUP BY scraped_time;
+   
+'''
+# last_scraped_date='''
+# SELECT max(scraped_time)
+# from jobs;'''
+
+
+mont_year='''
+WITH role_counts AS (
+    SELECT 
+        strftime('%H', scraped_time) AS hour,
+        J_title,
+        COUNT(*) AS role_count
+    FROM jobs
+    GROUP BY hour, J_title
+),
+ranked_roles AS (
+    SELECT 
+        hour,
+        J_title,
+        role_count,
+        ROW_NUMBER() OVER (
+            PARTITION BY hour 
+            ORDER BY role_count DESC
+        ) AS rank
+    FROM role_counts
+)
+SELECT 
+    hour,
+    J_title,
+    role_count
+FROM ranked_roles
+WHERE rank <= 3
+ORDER BY hour, role_count DESC;
+'''
+query=pd.read_sql_query(mont_year,conn)
 print(query)
+
+# query=pd.read_sql_query(trends,conn)
+# print(query.loc[:,"scraped_time"])
 # qr=pd.read_sql_query(developer_skills,conn)
 # qr2=pd.read_sql_query(no_of_jobs,conn)
 # print(qr)

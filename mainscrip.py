@@ -12,7 +12,7 @@ from scraper.fetcher import get_soup
 from scraper.extractor import scrape_data
 from db.db_manager import manage_operation
 
-from datetime import datetime
+
 
 
 
