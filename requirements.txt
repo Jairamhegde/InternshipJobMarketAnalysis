@@ -4,6 +4,6 @@ plotly
 seaborn
 matplotlib
 pathlib 
-bs4 
+beautifulsoup4
 sqlite3 
 sys
