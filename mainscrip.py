@@ -26,16 +26,16 @@ logging.basicConfig(
 logging.info("Execution started..")
 def internshala(url):   
     
-        # for i in range(1,pages+1):
-        #     if i==1:
-        #         link=url
-        #     else:
-        #         link=url+f'page-{i}'
+        for i in range(1,11):
+            if i==1:
+                link=url
+            else:
+                link=url+f'page-{i}'
         try:
             g=get_soup(url)
             x=scrape_data(g)
                 
-            # logging.info(f"Scraped data from page {i}")
+            logging.info(f"Scraped data from page {i}")
             manage_operation(x)
               
         except Exception as e:

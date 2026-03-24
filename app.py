@@ -6,32 +6,32 @@ from queries.analysis import roles, TopSkillsOfRole, jobCount, topSkills, topLoc
 import pandas as pd
 import logging
 
-
+from mainscrip import internshala
 # Page configuration
 st.set_page_config(
     page_title="Job Market Intelligence Dashboard",
     layout="wide",
     initial_sidebar_state="expanded"
 )
-if "data_loaded" not in st.session_state:
-    st.session_state.data_loaded = False
+# if "data_loaded" not in st.session_state:
+#     st.session_state.data_loaded = False
 
 # Custom CSS for better styling
-def takeuserInput():
-    from mainscrip import internshala
-    if not st.session_state.data_loaded:
-        pages=10
-        progress=st.progress(0)
-        for i in range(1,pages+1):
-            if i==1:
-                link="https://internshala.com/jobs/ai-agent-development,backend-development-jobs/"
-            else:
-                link="https://internshala.com/jobs/ai-agent-development,backend-development-jobs/"+f'page-{i}'
-            internshala(link)
-            progress.progress(i/pages)
-        st.session_state.data_loaded=True
-        st.success("Scraping completed successfully!")
-        logging.info("Data scraped..")
+# def takeuserInput():
+#     from mainscrip import internshala
+#     if not st.session_state.data_loaded:
+#         pages=10
+#         progress=st.progress(0)
+#         for i in range(1,pages+1):
+#             if i==1:
+#                 link="https://internshala.com/jobs/ai-agent-development,backend-development-jobs/"
+#             else:
+#                 link="https://internshala.com/jobs/ai-agent-development,backend-development-jobs/"+f'page-{i}'
+#             internshala(link)
+#             progress.progress(i/pages)
+#         st.session_state.data_loaded=True
+#         st.success("Scraping completed successfully!")
+#         logging.info("Data scraped..")
      
 def load_dashboard():
     st.markdown("""
@@ -95,7 +95,7 @@ def load_dashboard():
             index=0
         )
         if st.button("SCRAPE DATA"):
-            takeuserInput()
+                pass
 
   
         # Stats summary in sidebar
