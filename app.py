@@ -6,7 +6,7 @@ from queries.analysis import roles, TopSkillsOfRole, jobCount, topSkills, topLoc
 import pandas as pd
 import logging
 
-from mainscrip import internshala
+
 # Page configuration
 st.set_page_config(
     page_title="Job Market Intelligence Dashboard",
@@ -94,8 +94,8 @@ def load_dashboard():
             ["Overall Market Trends", "Role-Specific Analysis", "Comparative Analysis","Trends Over Time"],
             index=0
         )
-        if st.button("SCRAPE DATA"):
-                pass
+        # if st.button("SCRAPE DATA"):
+        #         pass
 
   
         # Stats summary in sidebar
