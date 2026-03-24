@@ -4,3 +4,6 @@ plotly
 seaborn
 matplotlib
 pathlib 
+bs4 
+sqlite3 
+sys
