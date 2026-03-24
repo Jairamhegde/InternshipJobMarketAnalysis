@@ -1,3 +1,6 @@
 pandas
 numpy
 plotly
+seaborn
+matplotlib
+pathlib 
