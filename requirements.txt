@@ -1,9 +1,8 @@
 pandas
 numpy
+streamlit
 plotly
 seaborn
-matplotlib
-pathlib 
+matplotlib 
 beautifulsoup4
-sqlite3 
-sys
+requests
