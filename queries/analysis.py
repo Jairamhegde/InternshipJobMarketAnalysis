@@ -24,7 +24,7 @@ def roles():
     # db_path = 'jobs.db'
     conn=sqlite3.connect(db_path)
     query='''
-    SELECT j.j_title,count(*) as demand
+    SELECT j.j_title,count(j.j_title) as demand
     FROM jobs j
     GROUP BY j_title
     ORDER BY demand DESC
@@ -33,6 +33,15 @@ def roles():
     df=pd.read_sql_query(query,conn)
     conn.close()
     return df
+def noOfopportunities():
+    conn=sqlite3.connect(db_path)
+    query = '''
+    SELECT count(*) as opportunities
+    FROM jobs;
+    '''
+    df=pd.read_sql_query(query,conn)
+    conn.close()
+    return df['opportunities'][0]
 def topLocations():
     # db_path = 'jobs.db'
     conn=sqlite3.connect(db_path)
@@ -99,14 +108,7 @@ def jobCount(job):
     df=pd.read_sql_query(query,conn,params=(job,))
     conn.close()
     return df
-def sortRoles(role):
-    # db_path = 'jobs.db'
-    conn=sqlite3.connect(db_path)
-    query='''
-SELECT job,count(job) jobcount,
-FROM jobs
 
-'''
 def last_scraped_time():
     # db_path = 'jobs.db'
     conn=sqlite3.connect(db_path)
@@ -115,6 +117,38 @@ def last_scraped_time():
     SELECT max(scraped_time)
     from jobs;'''
     df=pd.read_sql_query(query,conn)
+    conn.close()
+    return df.iloc[0,0]
+def roles_trends():
+    top_roles='''
+        with TopSkills as (
+        SELECT ss.name 
+        from jobs j
+        join job_skills js on j.j_id = js.job_id
+        join skills ss on js.skill_id = ss.s_id
+        group by ss.name
+        order  by count(*) desc
+        limit 4 
+        ),
+        Ranked as (
+        select strftime("%m",postedDate) as month,s.name,count(J_title) as jobCount,
+        rank() over(
+        partition by strftime("%m",postedDate)
+        order by count(J_title) desc
+        ) as rank
+        from jobs j
+        join job_skills js on j.j_id = js.job_id
+        join skills s on js.skill_id = s.s_id
+        where s.name in (select name from TopSkills)
+        group by month,s.name
+        order by jobCount desc
+
+        )
+        select * from Ranked
+        order by month,rank;
+        '''
+    conn=sqlite3.connect(db_path)
+    df=pd.read_sql_query(top_roles,conn)
     conn.close()
     return df
 

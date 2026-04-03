@@ -22,14 +22,51 @@ cur=conn.cursor()
 #     "alter table skills rename to old_skil"
 # )
 # logging.info("Added scraped_time column to jobs table")
-cur.execute(
+# cur.execute(
+#     '''
+#     CREATE TABLE jobsnd_skills(
+#     job_id INT,
+#     skill_id TEXT,
+#     PRIMARY KEY(job_id,skill_id),
+#     FOREIGN KEY(job_id)REFERENCES jobs(j_id) ON DELETE CASCADE,
+#     FOREIGN KEY(skill_id)REFERENCES skills(s_id) ON DELETE CASCADE
+#     )
+# ;'''
+# )
+# cur.execute(
+#     '''INSERT OR IGNORE INTO  jobsnd_skills(job_id,skill_id) SELECT job_id,skill_id from job_skills;
+# '''
+# )
+# cur.execute(''' drop table jobsnd_skills''')
+# cur.execute('''
+# PRAGMA foreign_keys = on;
+# ''')
+# cur.execute('''
+# ALTER TABLE jobsnd_skills rename to job_skills;
+# ''')
 
-    '''
-CREATE TABLE skills(
-s_id integer primary key autoincrement,
-name text unique
-);'''
-)
+def clearTable():
+    conn=sqlite3.connect(db_path)
+    cur=conn.cursor()
+    cur.execute('DELETE FROM jobs')
+    cur.execute('DELETE FROM skills')
+    cur.execute('DELETE FROM job_skills')
+    conn.commit()
+    conn.close()
 
+
+# cur.execute('''
+# CREATE TABLE jobSnapshot(
+#         job_id INT,
+#         scraped_date date,
+#         PRIMARY KEY(job_id,scraped_date));
+# ''')
+
+cur.execute('''
+insert into jobSnapshot(job_id,scraped_date)
+            select j_id,scraped_time from jobs;
+
+
+''')
 conn.commit()
 conn.close()

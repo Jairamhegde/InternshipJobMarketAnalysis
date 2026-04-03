@@ -2,7 +2,7 @@ import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
-from queries.analysis import roles, TopSkillsOfRole, jobCount, topSkills, topLocations, commonRoles, last_scraped_time
+from queries.analysis import roles,noOfopportunities,roles_trends, TopSkillsOfRole, jobCount, topSkills, topLocations, commonRoles, last_scraped_time
 import pandas as pd
 import logging
 
@@ -54,7 +54,8 @@ def load_dashboard():
             'roles': roles(),
             'skills': topSkills(),
             'locations': topLocations(),
-            'common_roles': commonRoles()
+            'common_roles': commonRoles(),
+            'opportunity':noOfopportunities()
         }
   
     data = load_all_data()
@@ -62,6 +63,7 @@ def load_dashboard():
     df_skills = data['skills']
     df_locations = data['locations']
     df_common_roles = data['common_roles']
+   
 
     #SIDEBAR
     with st.sidebar:
@@ -72,15 +74,9 @@ def load_dashboard():
             ["Overall Market Trends", "Role-Specific Analysis", "Comparative Analysis","Trends Over Time"],
             index=0
         )
-        # if st.button("SCRAPE DATA"):
-        #         pass
-
-  
-        # Stats summary in sidebar
-
-        total_job_count = df_roles['demand'].sum()
-        total_unique_roles = len(df_roles)
-        total_unique_skills = len(df_skills)
+      
+        total_job_count = data['opportunity']
+       
         
        
     st.title("Internship Job Market Analysis ")
@@ -530,7 +526,14 @@ def load_dashboard():
             st.warning("Please select at least 2 roles to compare")
     elif page == "Trends Over Time":
         st.subheader("Treds over time")
-        st.dataframe(data)
+        df = roles_trends()
+        df["month"]=pd.to_datetime(df["month"],format="%m")
+        df["month"]= df["month"].dt.strftime("%b")
+        df = df.sort_values("month",ascending=False)
+        fig=px.line(roles_trends(),x="month",y="jobCount",color="name",markers=True)
+        st.plotly_chart(fig, use_container_width=True)
+        st.dataframe(df)
+        # st.dataframe(data)
     # Footer
 
 

@@ -14,10 +14,6 @@ from db.db_manager import manage_operation
 
 
 
-
-
-
-
 logging.basicConfig(
      filename="logfile.log",
      level=logging.INFO,
@@ -26,23 +22,18 @@ logging.basicConfig(
 logging.info("Execution started..")
 def internshala(url):   
     
-        for i in range(1,11):
+        for i in range(1,21):
             if i==1:
                 link=url
             else:
-                    link=url+f'page-{i}'
+                link=url+f'page-{i}'
             try:
                 g=get_soup(link)
-                x=scrape_data(g)
-                    
+                x=scrape_data(g)     
                 logging.info(f"Scraped data from page {i}")
                 manage_operation(x)
-                
             except Exception as e:
-                logging.error("error while scraping..")
-
-        
-         
+                logging.error(e)
 
 def run_streamlit():
     subprocess.run([
