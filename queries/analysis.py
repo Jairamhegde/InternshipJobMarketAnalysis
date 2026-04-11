@@ -131,12 +131,13 @@ def roles_trends():
         limit 4 
         ),
         Ranked as (
-        select strftime("%m",postedDate) as month,s.name,count(J_title) as jobCount,
+        select strftime("%d",jsn.scraped_date) as month,s.name,count(*) as jobCount,
         rank() over(
-        partition by strftime("%m",postedDate)
-        order by count(J_title) desc
+        partition by strftime("%d",jsn.scraped_date)
+        order by count(*) desc
         ) as rank
-        from jobs j
+        from jobSnapshot jsn
+        join jobs j on jsn.job_id = j.j_id
         join job_skills js on j.j_id = js.job_id
         join skills s on js.skill_id = s.s_id
         where s.name in (select name from TopSkills)

@@ -11,7 +11,6 @@ db_path = os.path.join(BASE_DIR, "jobs.db")
 def manage_operation(jd):
     try:
         conn=sqlite3.connect(db_path)
-    
         cur=conn.cursor()
         for i in jd:
             cur.execute(
@@ -26,46 +25,47 @@ def manage_operation(jd):
                         i['posted_date']
                     )
                     )
-            job_id=cur.lastrowid
-            cur.execute(
-                '''UPDATE OR IGNORE Jobs set company=? WHERE j_id=?''',
-                (i['company'],job_id)
-        )
-            cur.execute(
+            if cur.lastrowid:
+                job_id = cur.lastrowid 
+                if i['TechStack']:
+                    for techstack in i['TechStack']:
+                        cur.execute(
+                            'INSERT OR IGNORE INTO skills(name) VALUES(?)',
+                            (techstack,))
+                        
+                        cur.execute(
+                            'SELECT s_id FROM skills WHERE name=?',
+                            (techstack,)
+                        )
+                        word=cur.fetchone()
+                        if word:
+                            skill_id=word[0] #this line fetches the skill id which helps to map the skils with the job in job_skills table
+                        else:
+                            continue
+
+                        # Insert data into job_skills table
+                        cur.execute(
+                            "INSERT OR IGNORE INTO job_skills(job_id,skill_id) VALUES (?,?)",
+                            (job_id,skill_id)
+                        )
+            else:
+                cur.execute(
                 '''SELECT j_id from jobs
                 where j_title=? and company=? and location=?''',
                 (i['job'],i['company'],i['Location'])
 
-            )
-            jb_id=cur.fetchone()[0]
+                )
+                job_id=cur.fetchone()[0]
             cur.execute(
-                '''INSERT INTO jobSnapshot(job_id,scraped_date) values(?,?)''',(jb_id,i["Scrape_time"])
+                '''INSERT INTO jobSnapshot(job_id,scraped_date) values(?,?)''',(job_id,i["Scrape_time"])
             )
-        # Get the job id
-            
-            if i['TechStack']:
-                for techstack in i['TechStack']:
-                    cur.execute(
-                        'INSERT OR IGNORE INTO skills(name) VALUES(?)',
-                        (techstack,))
-                    
-                    cur.execute(
-                        'SELECT s_id FROM skills WHERE name=?',
-                        (techstack,)
-                    )
-                    skill_id=cur.fetchone()[0] #this line fetches the skill id which helps to map the skils with the job in jo_skills table
+                # Get the job id
 
-                    # Insert data into job_skills table
-                    cur.execute(
-                        "INSERT OR IGNORE INTO job_skills(job_id,skill_id) VALUES (?,?)",
-                        (job_id,skill_id)
-                    )
-    
         
         conn.commit()  #commit the changes
         conn.close()    #close the connection
     except Exception as e:
-        logging.ERROR(e)
+        logging.error(e)
 
 
 

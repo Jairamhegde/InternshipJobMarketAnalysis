@@ -82,7 +82,7 @@ def load_dashboard():
     st.title("Internship Job Market Analysis ")
 
 
-    # ================= PAGE: OVERALL MARKET TRENDS =================
+    # PAGE: OVERALL MARKET TRENDS
     if page == "Overall Market Trends":
         # st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
         
@@ -527,8 +527,8 @@ def load_dashboard():
     elif page == "Trends Over Time":
         st.subheader("Treds over time")
         df = roles_trends()
-        df["month"]=pd.to_datetime(df["month"],format="%m")
-        df["month"]= df["month"].dt.strftime("%b")
+        # df["month"]=pd.to_datetime(df["month"],format="%m")
+        # df["month"]= df["month"].dt.strftime("%b")
         df = df.sort_values("month",ascending=False)
         fig=px.line(roles_trends(),x="month",y="jobCount",color="name",markers=True)
         st.plotly_chart(fig, use_container_width=True)
