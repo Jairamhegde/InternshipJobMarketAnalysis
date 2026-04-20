@@ -5,7 +5,7 @@ import pandas as pd
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__)) 
 db_path = os.path.join(BASE_DIR, "jobs.db")
-
+# ------------------------------FOR OVERALL MARKET TRENDS----
 def topSkills():
     # db_path = 'jobs.db'
     conn = sqlite3.connect(db_path)
@@ -37,7 +37,7 @@ def noOfopportunities():
     conn=sqlite3.connect(db_path)
     query = '''
     SELECT count(*) as opportunities
-    FROM jobs;
+    FROM jobs ;
     '''
     df=pd.read_sql_query(query,conn)
     conn.close()
@@ -86,9 +86,9 @@ def TopSkillsOfRole(role):
     conn=sqlite3.connect(db_path)
     query='''
     SELECT s.name,count(*) as demand
-    FROM jobs j
-    JOIN job_skills js ON j.j_id = js.job_id
-    JOIN skills s ON s.s_id = js.skill_id
+    FROM skills s
+    JOIN job_skills js ON s.s_id = js.skill_id
+    JOIN jobs j ON js.job_id = j.j_id  
     WHERE j.j_title = ?
     GROUP BY s.name
     ORDER BY demand DESC
@@ -153,5 +153,16 @@ def roles_trends():
     conn.close()
     return df
 
+#--------------------------FOR LAST 7 DAYS ANALYSIS -------------
+def OPPORTUNITIES():
+    conn=sqlite3.connect(db_path)
+    query = '''
+    SELECT count(*) as opportunities
+    FROM jobs 
+    where date(postedDate) >= date("now","-7 days");
+    '''
+    df=pd.read_sql_query(query,conn)
+    conn.close()
+    return df['opportunities'][0]
 # print(commonRoles())
 

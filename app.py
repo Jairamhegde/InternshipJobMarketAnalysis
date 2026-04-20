@@ -4,9 +4,21 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from queries.analysis import roles,noOfopportunities,roles_trends, TopSkillsOfRole, jobCount, topSkills, topLocations, commonRoles, last_scraped_time
 import pandas as pd
+import plotly.io as pio
+
 import logging
 
-
+pio.templates["mytheme"] = go.layout.Template(
+    layout=go.Layout(
+        paper_bgcolor="rgba(0,0,0,0)",  # TRANSPARENT
+        plot_bgcolor="rgba(0,0,0,0)",
+        font=dict(
+            family="DM Sans",
+            color="#ffffff"
+        )
+    )
+)
+pio.templates.default="mytheme"
 # Page configuration
 st.set_page_config(
     page_title="Job Market Intelligence Dashboard",
@@ -14,24 +26,81 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-     
 def load_dashboard():
+    
+    
+    
     st.markdown("""
     <style>
-    .main {
-        padding: 0rem 1rem;
+   @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Space+Mono:wght@700&display=swap');
+
+    html, body, [class*="css"] {
+    font-family: 'DM Sans', sans-serif !important;
     }
-    .stMetric {
-        background-color:none;
-        text:black;
-        padding: 15px;
-        border-radius: 10px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    .stApp{
+                background-color:#0c0c0c;
+            }
+    .block-container{
+                padding: 1rem 2rem !important;
+                }
+    .main div[data-testid="stMarkdownContainer"]{
+                border-bottom:none !important;
+                }
+
+    [data-testid="stMetric"] {
+        background-color:#2C2C2A;
+        border: 1px solid rgb(89, 89, 89);
+        padding:16px 18px !important;
+        border-radius: 12px;
+        
+    }
+    [data-testid = "stMetricLabel"]{
+                font-sze: 11px !important;
+                color:#e4e4e4 !important;
+                text-transform:uppercase;
+                letter-spacing: 0.8px;
+                }
+
+    [data-testid="stMetricValue"]{
+                font-family: "Space Mono",monospace !important;
+                font-size: 24px !important;
+                color: #ffffff !important;
+                }
+
+    section[data-testid="stSidebar"]{
+                background-color:#2C2C2A}
+    section[data-testid="stSidebar"]*{
+                background-color:#B4B2A9
+                }
+     
+    section[data-testid="stSidebar"] h2{
+                border-bottom:none !important;
+                font-size : 40px !important;}
+
+    div[data-testid="stPlotlyChart"] {
+        background-color: #2C2C2A !important;
+        padding: 10px;
+        border-radius: 15px;
+        border: 1px solid #444 !important;
+    }
+
+    div[data-testid="stPlotlyChart"]*{
+                background: transparent !important;
+                }
+    
+    div[data-testid="stPlotlyChart"] > div,
+    div[data-testid="stPlotlyChart"] > div > div {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    [data-testid="stDataFrame"]{
+        background-color:#2C2C2A !important;
+        border-radius:10px !important;
     }
     h1 {
         color: #1f77b4;
         padding-bottom: 10px;
-        border-bottom: 3px solid #1f77b4;
+        
     }
     h2 {
         color: #2c3e50;
@@ -40,11 +109,16 @@ def load_dashboard():
     h3 {
         color: #34495e;
     }
-    .section-divider {
-        margin: 30px 0;
-        border-top: 2px solid #e0e0e0;
-    }
-    </style>
+    div.stButton > button{
+                background-color:#2C2C2A !important;
+                width:100%;
+                transition: all 0.35s ease;
+                }
+          
+    div.stButton > button:hover{
+                background-color:#111111 !important;
+                }
+          
     """, unsafe_allow_html=True)
 
 # Load data
@@ -63,40 +137,37 @@ def load_dashboard():
     df_skills = data['skills']
     df_locations = data['locations']
     df_common_roles = data['common_roles']
-   
 
-    #SIDEBAR
+    
     with st.sidebar:
-        st.title("Navigation")
+        st.markdown("### Navigation")
+        pages = ["Overall Market Trends", "Role-Specific Analysis", "Comparative Analysis","Trends Over Time"]
+        if "page" not in st.session_state:
+            st.session_state.page = pages[0]
+        for i in pages:
+            if st.button(i,use_container_width=True):
+                st.session_state.page = i
+        page = st.session_state.page
+        # page = st.radio(
+        #     "Select View",
+        #     ["Overall Market Trends", "Role-Specific Analysis", "Comparative Analysis","Trends Over Time"],
+        #     index=0
+        #     )
         
-        page = st.radio(
-            "Select View",
-            ["Overall Market Trends", "Role-Specific Analysis", "Comparative Analysis","Trends Over Time"],
-            index=0
-        )
-      
         total_job_count = data['opportunity']
-       
-        
-       
-    st.title("Internship Job Market Analysis ")
-
+    st.markdown("# Internship Job Market Analysis ")
 
     # PAGE: OVERALL MARKET TRENDS
     if page == "Overall Market Trends":
-        # st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
-        
-        # Key Metrics Row
         st.subheader("Market Overview")
         col1, col2, col3, col4 = st.columns(4)
         
         with col1:
             st.metric(
-                label="Total Opportunities",
+                label="Opportunities till now",
                 value=f"{total_job_count:,}",
                 delta="Active Postings"
             )
-        
         with col2:
             st.metric(
                 label="Top Role",
@@ -118,7 +189,7 @@ def load_dashboard():
                 delta=f"{df_locations.iloc[0]['count']} jobs"
             )
         
-        st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
+
         
         # Main Charts Section
         st.subheader("Market Demand Analysis")
@@ -135,25 +206,26 @@ def load_dashboard():
                 x='demand',
                 y='J_title',
                 orientation='h',
-                color='demand',
-                color_continuous_scale='Blues',
                 text='demand',
                 labels={'demand': 'Number of Postings', 'J_title': 'Job Title'}
             )
-            fig_roles.update_traces(texttemplate='%{text}', textposition='outside')
+            fig_roles.update_traces(marker=dict(color = df_roles['demand'],colorscale='Blues'), textposition='outside' )
             fig_roles.update_layout(
                 height=500,
                 showlegend=False,
                 xaxis_title="Number of Job Postings",
                 yaxis_title="",
                 yaxis={'categoryorder': 'total ascending'},
-                margin=dict(l=0, r=0, t=30, b=0)
+                margin=dict(r=20),
+                paper_bgcolor="rgba(0,0,0,0)",
+                plot_bgcolor="rgba(0,0,0,0)"
+
+                
             )
             st.plotly_chart(fig_roles, use_container_width=True)
         
         with col2:
             st.markdown("Top 10 In-Demand Skills")
-            
             
             fig_skills = px.bar(
                 df_skills,
@@ -166,15 +238,19 @@ def load_dashboard():
                 labels={'demand': 'Mentions Across Jobs', 'name': 'Skill'}
             )
             
-            fig_skills.update_traces(texttemplate='%{text}', textposition='outside')
+            fig_skills.update_traces( textposition='outside')
             fig_skills.update_layout(
                 height=500,
                 showlegend=False,
                 xaxis_title="count",
                 yaxis_title="",
                 yaxis={'categoryorder': 'total ascending'},
-                margin=dict(l=0, r=0, t=30, b=0))
-            st.markdown("<div class=section-divider' stryle='background-color:red'> are the most commonly mentioned skills</div>", unsafe_allow_html=True)
+                margin=dict(r=20),
+                paper_bgcolor="rgba(0,0,0,0)",
+                plot_bgcolor="rgba(0,0,0,0)"
+
+                )
+            
             st.plotly_chart(fig_skills, use_container_width=True)
         # st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
         
@@ -200,7 +276,10 @@ def load_dashboard():
                 height=400,
                 showlegend=False,
                 xaxis_tickangle=-45,
-                margin=dict(l=0, r=0, t=40, b=100)
+                margin=dict(r=20),
+                paper_bgcolor="rgba(0,0,0,0)",
+                plot_bgcolor="rgba(0,0,0,0)"
+
             )
             st.plotly_chart(fig_locations, use_container_width=True)
         
@@ -210,14 +289,17 @@ def load_dashboard():
                 df_roles.head(8),
                 values='demand',
                 names='J_title',
+                hole=0.5,
                 title='Market Share by Top Roles',
                 color_discrete_sequence=px.colors.qualitative.Set3
             )
             fig_pie.update_traces(textposition='inside', textinfo='percent+label')
-            fig_pie.update_layout(height=400, margin=dict(l=0, r=0, t=40, b=0))
+            fig_pie.update_layout(height=400, margin=dict(r=20),
+                paper_bgcolor="rgba(0,0,0,0)",
+                plot_bgcolor="rgba(0,0,0,0)")
             st.plotly_chart(fig_pie, use_container_width=True)
         
-        st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
+       
         
         # Common Skills Across Top Roles
         if not df_common_roles.empty:
@@ -229,8 +311,8 @@ def load_dashboard():
                 x='total_occurrences',
                 y='skill',
                 orientation='h',
-                color='role_count',
-                color_continuous_scale='Purples',
+                # color='role_count',
+                # color_continuous_scale='Purples',
                 text='total_occurrences',
                 labels={
                     'total_occurrences': 'Total Occurrences',
@@ -238,11 +320,13 @@ def load_dashboard():
                     'role_count': 'Role Count'
                 }
             )
-            fig_common.update_traces(texttemplate='%{text}', textposition='outside')
+            fig_common.update_traces(texttemplate='%{text}', textposition='outside',marker = dict(color=df_common_roles['role_count'],colorscale="Blues"))
             fig_common.update_layout(
                 height=500,
                 yaxis={'categoryorder': 'total ascending'},
-                margin=dict(l=0, r=0, t=10, b=0)
+                margin=dict(r=20),
+                paper_bgcolor="rgba(0,0,0,0)",
+                plot_bgcolor="rgba(0,0,0,0)"
             )
             st.plotly_chart(fig_common, use_container_width=True)
         
@@ -258,7 +342,6 @@ def load_dashboard():
             
             with tab3:
                 st.dataframe(df_locations, use_container_width=True, height=400)
-
     # PAGE: ROLE-SPECIFIC ANALYSIS 
     elif page == "Role-Specific Analysis":
      
@@ -268,7 +351,7 @@ def load_dashboard():
         
         with col1:
             selected_role = st.selectbox(
-                "Choose from available roles:",
+                "Select a role to analyze:",
                 df_roles['J_title'].tolist(),
                 key="role_selector"
             )
@@ -277,9 +360,7 @@ def load_dashboard():
             # Show role rank
             role_rank = df_roles[df_roles['J_title'] == selected_role].index[0] + 1
             st.metric("Role Ranking", f"#{role_rank}", f"out of {len(df_roles)}")
-        
-        st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
-        
+        st.markdown('<br>', unsafe_allow_html=True)
         # Fetch role-specific data
         df_role_skills = TopSkillsOfRole(selected_role)
         df_job_count = jobCount(selected_role)
@@ -322,7 +403,7 @@ def load_dashboard():
                 delta="per skill"
             )
         
-        st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
+        st.markdown('<br>', unsafe_allow_html=True)
         
         # Skills visualization
         st.subheader("Skills Breakdown")
@@ -347,7 +428,9 @@ def load_dashboard():
                 height=600,
                 showlegend=False,
                 yaxis={'categoryorder': 'total ascending'},
-                margin=dict(l=0, r=0, t=40, b=0)
+                margin=dict(r=20),
+                paper_bgcolor="rgba(0,0,0,0)",
+                plot_bgcolor="rgba(0,0,0,0)"
             )
             st.plotly_chart(fig_role_skills, use_container_width=True)
         
@@ -361,7 +444,9 @@ def load_dashboard():
                 color_discrete_sequence=px.colors.qualitative.Pastel
             )
             fig_skill_pie.update_traces(textposition='inside', textinfo='percent+label')
-            fig_skill_pie.update_layout(height=300, margin=dict(l=0, r=0, t=40, b=0))
+            fig_skill_pie.update_layout(height=300, margin=dict(r=20),
+                paper_bgcolor="rgba(0,0,0,0)",
+                plot_bgcolor="rgba(0,0,0,0)")
             st.plotly_chart(fig_skill_pie, use_container_width=True)
             
             # Skill categories analysis
@@ -371,7 +456,7 @@ def load_dashboard():
                 st.progress(top_skill_pct / 100)
                 st.caption(f"**{df_role_skills.iloc[0]['name']}** appears in {top_skill_pct:.1f}% of skill requirements")
         
-        st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
+        st.markdown('<br>', unsafe_allow_html=True)
         
         # Insights and recommendations
         st.subheader("Career Insights & Recommendations")
@@ -397,13 +482,12 @@ def load_dashboard():
         # Detailed data table
         with st.expander("View Complete Skills Data"):
             st.dataframe(df_role_skills, use_container_width=True, height=400)
-
     # PAGE: COMPARATIVE ANALYSIS
     elif page == "Comparative Analysis":
        
         
-        st.subheader("Compare Multiple Roles")
-        st.markdown("#### Analyze and compare different roles side by side")
+        
+        st.markdown("### Analyze and compare different roles side by side")
         
         # Multi-select for roles
         selected_roles = st.multiselect(
@@ -414,7 +498,7 @@ def load_dashboard():
         )
         
         if len(selected_roles) >= 2:
-            st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
+            st.markdown('<br><br>', unsafe_allow_html=True)
             
             # Comparison metrics
             comparison_data = []
@@ -434,7 +518,7 @@ def load_dashboard():
             st.subheader("Role Comparison Table")
             st.dataframe(df_comparison, use_container_width=True, height=200)
             
-            st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
+            st.markdown('<br><br>', unsafe_allow_html=True)
             
             # Comparative charts
             col1, col2 = st.columns(2)
@@ -451,7 +535,9 @@ def load_dashboard():
                     title="Job Openings Comparison"
                 )
                 fig_comp_jobs.update_traces(texttemplate='%{text}', textposition='outside')
-                fig_comp_jobs.update_layout(height=400, showlegend=False)
+                fig_comp_jobs.update_layout(height=400, showlegend=False,margin=dict(r=20),
+                paper_bgcolor="rgba(0,0,0,0)",
+                plot_bgcolor="rgba(0,0,0,0)")
                 st.plotly_chart(fig_comp_jobs, use_container_width=True)
             
             with col2:
@@ -466,10 +552,12 @@ def load_dashboard():
                     title="Unique Skills Required"
                 )
                 fig_comp_skills.update_traces(texttemplate='%{text}', textposition='outside')
-                fig_comp_skills.update_layout(height=400, showlegend=False)
+                fig_comp_skills.update_layout(height=400, showlegend=False,margin=dict(r=20),
+                paper_bgcolor="rgba(0,0,0,0)",
+                plot_bgcolor="rgba(0,0,0,0)")
                 st.plotly_chart(fig_comp_skills, use_container_width=True)
             
-            st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
+            st.markdown('<br><br>', unsafe_allow_html=True)
 
             import numpy as np
 
@@ -513,7 +601,9 @@ def load_dashboard():
                 fig_heatmap.update_layout(
                     title="Top 20 Skills Presence Across Selected Roles",
                     height=400,
-                    xaxis_tickangle=-45
+                    xaxis_tickangle=-45,margin=dict(r=20),
+                paper_bgcolor="rgba(0,0,0,0)",
+                plot_bgcolor="rgba(0,0,0,0)"
                 )
                 st.plotly_chart(fig_heatmap, use_container_width=True)
                 
@@ -525,12 +615,13 @@ def load_dashboard():
         else:
             st.warning("Please select at least 2 roles to compare")
     elif page == "Trends Over Time":
-        st.subheader("Treds over time")
+        st.markdown("### Treds over time")
         df = roles_trends()
-        # df["month"]=pd.to_datetime(df["month"],format="%m")
-        # df["month"]= df["month"].dt.strftime("%b")
         df = df.sort_values("month",ascending=False)
-        fig=px.line(roles_trends(),x="month",y="jobCount",color="name",markers=True)
+        fig=px.line(roles_trends(),x="month",y="jobCount",color="name",markers=True,line_shape="spline")
+        fig.update_layout(margin=dict(r=30),
+                paper_bgcolor="rgba(0,0,0,0)",
+                plot_bgcolor="rgba(0,0,0,0)")
         st.plotly_chart(fig, use_container_width=True)
         st.dataframe(df)
         # st.dataframe(data)

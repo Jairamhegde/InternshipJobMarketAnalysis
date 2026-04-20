@@ -12,12 +12,13 @@ from scraper.fetcher import get_soup
 from scraper.extractor import scrape_data
 from db.db_manager import manage_operation
 
-
-
 logging.basicConfig(
-     filename="logfile.log",
-     level=logging.INFO,
-     format='%(asctime)s-%(levelname)s-%(name)s-%(message)s'
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)s | %(filename)s:%(lineno)d | %(funcName)s() | %(message)s",
+    handlers=[
+        logging.FileHandler("logfile.log"),
+        logging.StreamHandler()
+    ]
 )
 logging.info("Execution started..")
 def internshala(url):   
@@ -32,6 +33,7 @@ def internshala(url):
                 x=scrape_data(g)     
                 logging.info(f"Scraped data from page {i}")
                 manage_operation(x)
+                logging.info("inserted the data into the tables..")
             except Exception as e:
                 logging.error(e)
 
@@ -41,5 +43,5 @@ def run_streamlit():
     ])
      
 if __name__=='__main__':
-    internshala("https://internshala.com/jobs/ai-agent-development,backend-development-jobs/")   
+    internshala("https://internshala.com/jobs/net-development,ai-agent-development,asp-net,android-app-development,angular-js-development,backend-development,cloud-computing,cyber-security,front-end-development,full-stack-development,game-development,java,javascript-development,machine-learning,node-js-development,python-django,web-development-jobs/")   
     run_streamlit()

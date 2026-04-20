@@ -385,3 +385,680 @@
 2026-04-12 02:14:15,808-INFO-root-Scraped data from page 18
 2026-04-12 02:14:16,238-INFO-root-Scraped data from page 19
 2026-04-12 02:14:16,638-INFO-root-Scraped data from page 20
+2026-04-12 23:17:08,021-INFO-root-Execution started..
+2026-04-12 23:17:08,759-INFO-root-Scraped data from page 1
+2026-04-12 23:17:09,329-INFO-root-Scraped data from page 2
+2026-04-12 23:17:09,948-INFO-root-Scraped data from page 3
+2026-04-12 23:17:10,511-INFO-root-Scraped data from page 4
+2026-04-12 23:17:10,533-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-12 23:17:11,206-INFO-root-Scraped data from page 5
+2026-04-12 23:17:11,738-INFO-root-Scraped data from page 6
+2026-04-12 23:17:12,180-INFO-root-Scraped data from page 7
+2026-04-12 23:17:12,564-INFO-root-Scraped data from page 8
+2026-04-12 23:17:12,927-INFO-root-Scraped data from page 9
+2026-04-12 23:17:13,241-INFO-root-Scraped data from page 10
+2026-04-12 23:17:13,557-INFO-root-Scraped data from page 11
+2026-04-12 23:17:13,914-INFO-root-Scraped data from page 12
+2026-04-12 23:17:14,352-INFO-root-Scraped data from page 13
+2026-04-12 23:17:14,664-INFO-root-Scraped data from page 14
+2026-04-12 23:17:15,018-INFO-root-Scraped data from page 15
+2026-04-12 23:17:15,424-INFO-root-Scraped data from page 16
+2026-04-12 23:17:15,978-INFO-root-Scraped data from page 17
+2026-04-12 23:17:16,286-INFO-root-Scraped data from page 18
+2026-04-12 23:17:16,589-INFO-root-Scraped data from page 19
+2026-04-12 23:17:16,901-INFO-root-Scraped data from page 20
+2026-04-14 22:47:02,424-INFO-root-Execution started..
+2026-04-14 22:47:03,181-INFO-root-Scraped data from page 1
+2026-04-14 22:47:03,834-INFO-root-Scraped data from page 2
+2026-04-14 22:47:04,443-INFO-root-Scraped data from page 3
+2026-04-14 22:47:05,109-INFO-root-Scraped data from page 4
+2026-04-14 22:47:05,716-INFO-root-Scraped data from page 5
+2026-04-14 22:47:06,156-INFO-root-Scraped data from page 6
+2026-04-14 22:47:06,602-INFO-root-Scraped data from page 7
+2026-04-14 22:47:06,971-INFO-root-Scraped data from page 8
+2026-04-14 22:47:07,339-INFO-root-Scraped data from page 9
+2026-04-14 22:47:07,755-INFO-root-Scraped data from page 10
+2026-04-14 22:47:08,140-INFO-root-Scraped data from page 11
+2026-04-14 22:47:08,474-INFO-root-Scraped data from page 12
+2026-04-14 22:47:08,825-INFO-root-Scraped data from page 13
+2026-04-14 22:47:09,207-INFO-root-Scraped data from page 14
+2026-04-14 22:47:09,573-INFO-root-Scraped data from page 15
+2026-04-14 22:47:09,955-INFO-root-Scraped data from page 16
+2026-04-14 22:47:10,303-INFO-root-Scraped data from page 17
+2026-04-14 22:47:10,660-INFO-root-Scraped data from page 18
+2026-04-14 22:47:11,004-INFO-root-Scraped data from page 19
+2026-04-14 22:47:11,350-INFO-root-Scraped data from page 20
+2026-04-14 23:30:55,091-INFO-root-Execution started..
+2026-04-14 23:30:55,742-INFO-root-Scraped data from page 1
+2026-04-14 23:30:55,746-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:30:56,421-INFO-root-Scraped data from page 2
+2026-04-14 23:30:56,425-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:30:57,054-INFO-root-Scraped data from page 3
+2026-04-14 23:30:57,641-INFO-root-Scraped data from page 4
+2026-04-14 23:30:58,166-INFO-root-Scraped data from page 5
+2026-04-14 23:30:58,169-ERROR-root-'NoneType' object is not subscriptable
+2026-04-14 23:30:58,575-INFO-root-Scraped data from page 6
+2026-04-14 23:30:58,578-ERROR-root-'NoneType' object is not subscriptable
+2026-04-14 23:30:58,985-INFO-root-Scraped data from page 7
+2026-04-14 23:30:59,328-INFO-root-Scraped data from page 8
+2026-04-14 23:30:59,661-INFO-root-Scraped data from page 9
+2026-04-14 23:31:00,014-INFO-root-Scraped data from page 10
+2026-04-14 23:31:00,446-INFO-root-Scraped data from page 11
+2026-04-14 23:31:00,807-INFO-root-Scraped data from page 12
+2026-04-14 23:31:01,136-INFO-root-Scraped data from page 13
+2026-04-14 23:31:01,471-INFO-root-Scraped data from page 14
+2026-04-14 23:31:01,814-INFO-root-Scraped data from page 15
+2026-04-14 23:31:02,173-INFO-root-Scraped data from page 16
+2026-04-14 23:31:02,521-INFO-root-Scraped data from page 17
+2026-04-14 23:31:02,859-INFO-root-Scraped data from page 18
+2026-04-14 23:31:03,217-INFO-root-Scraped data from page 19
+2026-04-14 23:31:03,573-INFO-root-Scraped data from page 20
+2026-04-14 23:32:27,466-INFO-root-Execution started..
+2026-04-14 23:32:28,201-INFO-root-Scraped data from page 1
+2026-04-14 23:32:28,203-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:32:28,744-INFO-root-Scraped data from page 2
+2026-04-14 23:32:28,748-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:32:29,351-INFO-root-Scraped data from page 3
+2026-04-14 23:32:29,353-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:32:29,879-INFO-root-Scraped data from page 4
+2026-04-14 23:32:29,880-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:32:30,423-INFO-root-Scraped data from page 5
+2026-04-14 23:32:30,426-ERROR-root-'NoneType' object is not subscriptable
+2026-04-14 23:32:30,857-INFO-root-Scraped data from page 6
+2026-04-14 23:32:30,860-ERROR-root-'NoneType' object is not subscriptable
+2026-04-14 23:32:31,341-INFO-root-Scraped data from page 7
+2026-04-14 23:32:31,704-INFO-root-Scraped data from page 8
+2026-04-14 23:32:32,058-INFO-root-Scraped data from page 9
+2026-04-14 23:32:32,466-INFO-root-Scraped data from page 10
+2026-04-14 23:32:32,799-INFO-root-Scraped data from page 11
+2026-04-14 23:32:33,122-INFO-root-Scraped data from page 12
+2026-04-14 23:32:33,457-INFO-root-Scraped data from page 13
+2026-04-14 23:32:33,849-INFO-root-Scraped data from page 14
+2026-04-14 23:32:34,300-INFO-root-Scraped data from page 15
+2026-04-14 23:32:34,656-INFO-root-Scraped data from page 16
+2026-04-14 23:32:35,008-INFO-root-Scraped data from page 17
+2026-04-14 23:32:35,361-INFO-root-Scraped data from page 18
+2026-04-14 23:32:35,731-INFO-root-Scraped data from page 19
+2026-04-14 23:32:36,058-INFO-root-Scraped data from page 20
+2026-04-14 23:38:58,497-INFO-root-Execution started..
+2026-04-14 23:38:59,238-INFO-root-Scraped data from page 1
+2026-04-14 23:38:59,274-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:38:59,862-INFO-root-Scraped data from page 2
+2026-04-14 23:39:00,500-INFO-root-Scraped data from page 3
+2026-04-14 23:39:00,522-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:39:01,090-INFO-root-Scraped data from page 4
+2026-04-14 23:39:01,102-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:39:01,744-INFO-root-Scraped data from page 5
+2026-04-14 23:39:01,745-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:39:02,434-INFO-root-Scraped data from page 6
+2026-04-14 23:39:02,474-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:39:03,068-INFO-root-Scraped data from page 7
+2026-04-14 23:39:03,069-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:39:03,659-INFO-root-Scraped data from page 8
+2026-04-14 23:39:03,677-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:39:04,357-INFO-root-Scraped data from page 9
+2026-04-14 23:39:04,380-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:39:05,072-INFO-root-Scraped data from page 10
+2026-04-14 23:39:05,074-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:39:05,634-INFO-root-Scraped data from page 11
+2026-04-14 23:39:05,637-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:39:06,194-INFO-root-Scraped data from page 12
+2026-04-14 23:39:06,208-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:39:06,822-INFO-root-Scraped data from page 13
+2026-04-14 23:39:06,838-ERROR-root-'NoneType' object is not subscriptable
+2026-04-14 23:39:07,299-INFO-root-Scraped data from page 14
+2026-04-14 23:39:07,337-ERROR-root-'NoneType' object is not subscriptable
+2026-04-14 23:39:07,742-INFO-root-Scraped data from page 15
+2026-04-14 23:39:08,099-INFO-root-Scraped data from page 16
+2026-04-14 23:39:08,639-INFO-root-Scraped data from page 17
+2026-04-14 23:39:08,995-INFO-root-Scraped data from page 18
+2026-04-14 23:39:09,327-INFO-root-Scraped data from page 19
+2026-04-14 23:39:09,640-INFO-root-Scraped data from page 20
+2026-04-14 23:50:46,376-INFO-root-Execution started..
+2026-04-14 23:50:47,014-INFO-root-Scraped data from page 1
+2026-04-14 23:50:47,595-INFO-root-Scraped data from page 2
+2026-04-14 23:50:47,596-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:50:48,175-INFO-root-Scraped data from page 3
+2026-04-14 23:50:48,177-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:50:48,754-INFO-root-Scraped data from page 4
+2026-04-14 23:50:49,482-INFO-root-Scraped data from page 5
+2026-04-14 23:50:49,485-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:50:50,119-INFO-root-Scraped data from page 6
+2026-04-14 23:50:50,121-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:50:50,674-INFO-root-Scraped data from page 7
+2026-04-14 23:50:50,678-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:50:51,228-INFO-root-Scraped data from page 8
+2026-04-14 23:50:51,232-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:50:51,768-INFO-root-Scraped data from page 9
+2026-04-14 23:50:51,772-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:50:52,406-INFO-root-Scraped data from page 10
+2026-04-14 23:50:52,410-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:50:53,026-INFO-root-Scraped data from page 11
+2026-04-14 23:50:53,688-INFO-root-Scraped data from page 12
+2026-04-14 23:50:54,309-INFO-root-Scraped data from page 13
+2026-04-14 23:50:54,942-INFO-root-Scraped data from page 14
+2026-04-14 23:50:55,598-INFO-root-Scraped data from page 15
+2026-04-14 23:50:56,400-INFO-root-Scraped data from page 16
+2026-04-14 23:50:57,033-INFO-root-Scraped data from page 17
+2026-04-14 23:50:57,038-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:50:57,566-INFO-root-Scraped data from page 18
+2026-04-14 23:50:57,571-ERROR-root-UNIQUE constraint failed: jobSnapshot.job_id, jobSnapshot.scraped_date
+2026-04-14 23:50:58,110-INFO-root-Scraped data from page 19
+2026-04-14 23:50:58,115-ERROR-root-'NoneType' object is not subscriptable
+2026-04-14 23:50:58,650-INFO-root-Scraped data from page 20
+2026-04-14 23:50:58,652-ERROR-root-'NoneType' object is not subscriptable
+2026-04-17 20:31:46,407-INFO-root-Execution started..
+2026-04-17 20:31:47,365-INFO-root-Scraped data from page 1
+2026-04-17 20:31:47,370-ERROR-root-no such column: skill_id
+2026-04-17 20:31:48,144-INFO-root-Scraped data from page 2
+2026-04-17 20:31:48,153-ERROR-root-no such column: skill_id
+2026-04-17 20:31:48,889-INFO-root-Scraped data from page 3
+2026-04-17 20:31:48,900-ERROR-root-no such column: skill_id
+2026-04-17 20:31:49,581-INFO-root-Scraped data from page 4
+2026-04-17 20:31:49,584-ERROR-root-no such column: skill_id
+2026-04-17 20:31:50,308-INFO-root-Scraped data from page 5
+2026-04-17 20:31:50,311-ERROR-root-no such column: skill_id
+2026-04-17 20:31:51,157-INFO-root-Scraped data from page 6
+2026-04-17 20:31:51,159-ERROR-root-no such column: skill_id
+2026-04-17 20:31:51,847-INFO-root-Scraped data from page 7
+2026-04-17 20:31:51,849-ERROR-root-no such column: skill_id
+2026-04-17 20:31:52,590-INFO-root-Scraped data from page 8
+2026-04-17 20:31:52,593-ERROR-root-no such column: skill_id
+2026-04-17 20:31:53,439-INFO-root-Scraped data from page 9
+2026-04-17 20:31:53,441-ERROR-root-no such column: skill_id
+2026-04-17 20:31:54,109-INFO-root-Scraped data from page 10
+2026-04-17 20:31:54,111-ERROR-root-no such column: skill_id
+2026-04-17 20:31:54,930-INFO-root-Scraped data from page 11
+2026-04-17 20:31:55,641-INFO-root-Scraped data from page 12
+2026-04-17 20:31:56,438-INFO-root-Scraped data from page 13
+2026-04-17 20:31:57,741-INFO-root-Scraped data from page 14
+2026-04-17 20:31:58,414-INFO-root-Scraped data from page 15
+2026-04-17 20:31:58,416-ERROR-root-no such column: skill_id
+2026-04-17 20:31:59,404-INFO-root-Scraped data from page 16
+2026-04-17 20:31:59,406-ERROR-root-no such column: skill_id
+2026-04-17 20:32:00,205-INFO-root-Scraped data from page 17
+2026-04-17 20:32:00,207-ERROR-root-no such column: skill_id
+2026-04-17 20:32:00,977-INFO-root-Scraped data from page 18
+2026-04-17 20:32:00,979-ERROR-root-no such column: skill_id
+2026-04-17 20:32:01,753-INFO-root-Scraped data from page 19
+2026-04-17 20:32:01,756-ERROR-root-no such column: skill_id
+2026-04-17 20:32:02,330-INFO-root-Scraped data from page 20
+2026-04-17 20:32:02,333-ERROR-root-no such column: skill_id
+2026-04-17 20:50:11,407-INFO-root-Execution started..
+2026-04-17 20:50:12,410-INFO-root-Scraped data from page 1
+2026-04-17 20:50:12,415-INFO-root-inserted the data into the tables..
+2026-04-17 20:50:13,312-INFO-root-Scraped data from page 2
+2026-04-17 20:50:13,318-INFO-root-inserted the data into the tables..
+2026-04-17 20:50:14,221-INFO-root-Scraped data from page 3
+2026-04-17 20:50:14,227-INFO-root-inserted the data into the tables..
+2026-04-17 20:50:15,020-INFO-root-Scraped data from page 4
+2026-04-17 20:50:15,025-INFO-root-inserted the data into the tables..
+2026-04-17 20:50:15,738-INFO-root-Scraped data from page 5
+2026-04-17 20:50:15,744-INFO-root-inserted the data into the tables..
+2026-04-17 20:50:16,655-INFO-root-Scraped data from page 6
+2026-04-17 20:50:16,661-INFO-root-inserted the data into the tables..
+2026-04-17 20:50:17,344-INFO-root-Scraped data from page 7
+2026-04-17 20:50:17,350-INFO-root-inserted the data into the tables..
+2026-04-17 20:50:18,141-INFO-root-Scraped data from page 8
+2026-04-17 20:50:18,147-INFO-root-inserted the data into the tables..
+2026-04-17 20:50:18,887-INFO-root-Scraped data from page 9
+2026-04-17 20:50:18,893-INFO-root-inserted the data into the tables..
+2026-04-17 20:50:19,730-INFO-root-Scraped data from page 10
+2026-04-17 20:50:19,736-INFO-root-inserted the data into the tables..
+2026-04-17 20:50:20,405-INFO-root-Scraped data from page 11
+2026-04-17 20:50:20,406-INFO-root-inserted the data into the tables..
+2026-04-17 20:50:21,294-INFO-root-Scraped data from page 12
+2026-04-17 20:50:21,294-INFO-root-inserted the data into the tables..
+2026-04-17 20:50:21,963-INFO-root-Scraped data from page 13
+2026-04-17 20:50:21,963-INFO-root-inserted the data into the tables..
+2026-04-17 20:50:23,088-INFO-root-Scraped data from page 14
+2026-04-17 20:50:23,088-INFO-root-inserted the data into the tables..
+2026-04-17 20:50:23,946-INFO-root-Scraped data from page 15
+2026-04-17 20:50:23,950-INFO-root-inserted the data into the tables..
+2026-04-17 20:50:24,905-INFO-root-Scraped data from page 16
+2026-04-17 20:50:24,909-INFO-root-inserted the data into the tables..
+2026-04-17 20:50:25,660-INFO-root-Scraped data from page 17
+2026-04-17 20:50:25,663-ERROR-root-'NoneType' object is not subscriptable
+2026-04-17 20:50:25,663-INFO-root-inserted the data into the tables..
+2026-04-17 20:50:26,467-INFO-root-Scraped data from page 18
+2026-04-17 20:50:26,469-ERROR-root-'NoneType' object is not subscriptable
+2026-04-17 20:50:26,470-INFO-root-inserted the data into the tables..
+2026-04-17 20:50:27,270-INFO-root-Scraped data from page 19
+2026-04-17 20:50:27,273-ERROR-root-'NoneType' object is not subscriptable
+2026-04-17 20:50:27,273-INFO-root-inserted the data into the tables..
+2026-04-17 20:50:27,819-INFO-root-Scraped data from page 20
+2026-04-17 20:50:27,821-ERROR-root-'NoneType' object is not subscriptable
+2026-04-17 20:50:27,821-INFO-root-inserted the data into the tables..
+2026-04-20 01:01:03,348-INFO-root-Execution started..
+2026-04-20 01:01:04,331-ERROR-root-name 'pd' is not defined
+2026-04-20 01:01:04,332-INFO-root-Scraped data from page 1
+2026-04-20 01:01:04,332-ERROR-root-'NoneType' object is not iterable
+2026-04-20 01:01:04,332-INFO-root-inserted the data into the tables..
+2026-04-20 01:01:05,113-ERROR-root-name 'pd' is not defined
+2026-04-20 01:01:05,113-INFO-root-Scraped data from page 2
+2026-04-20 01:01:05,113-ERROR-root-'NoneType' object is not iterable
+2026-04-20 01:01:05,113-INFO-root-inserted the data into the tables..
+2026-04-20 01:01:05,803-ERROR-root-name 'pd' is not defined
+2026-04-20 01:01:05,803-INFO-root-Scraped data from page 3
+2026-04-20 01:01:05,804-ERROR-root-'NoneType' object is not iterable
+2026-04-20 01:01:05,804-INFO-root-inserted the data into the tables..
+2026-04-20 01:01:06,496-ERROR-root-name 'pd' is not defined
+2026-04-20 01:01:06,496-INFO-root-Scraped data from page 4
+2026-04-20 01:01:06,496-ERROR-root-'NoneType' object is not iterable
+2026-04-20 01:01:06,496-INFO-root-inserted the data into the tables..
+2026-04-20 01:01:07,250-ERROR-root-name 'pd' is not defined
+2026-04-20 01:01:07,251-INFO-root-Scraped data from page 5
+2026-04-20 01:01:07,251-ERROR-root-'NoneType' object is not iterable
+2026-04-20 01:01:07,253-INFO-root-inserted the data into the tables..
+2026-04-20 01:01:07,989-ERROR-root-name 'pd' is not defined
+2026-04-20 01:01:07,989-INFO-root-Scraped data from page 6
+2026-04-20 01:01:07,989-ERROR-root-'NoneType' object is not iterable
+2026-04-20 01:01:07,989-INFO-root-inserted the data into the tables..
+2026-04-20 01:01:08,743-ERROR-root-name 'pd' is not defined
+2026-04-20 01:01:08,743-INFO-root-Scraped data from page 7
+2026-04-20 01:01:08,743-ERROR-root-'NoneType' object is not iterable
+2026-04-20 01:01:08,743-INFO-root-inserted the data into the tables..
+2026-04-20 01:01:09,531-ERROR-root-name 'pd' is not defined
+2026-04-20 01:01:09,531-INFO-root-Scraped data from page 8
+2026-04-20 01:01:09,532-ERROR-root-'NoneType' object is not iterable
+2026-04-20 01:01:09,532-INFO-root-inserted the data into the tables..
+2026-04-20 01:01:10,212-ERROR-root-name 'pd' is not defined
+2026-04-20 01:01:10,212-INFO-root-Scraped data from page 9
+2026-04-20 01:01:10,212-ERROR-root-'NoneType' object is not iterable
+2026-04-20 01:01:10,212-INFO-root-inserted the data into the tables..
+2026-04-20 01:01:10,956-ERROR-root-name 'pd' is not defined
+2026-04-20 01:01:10,956-INFO-root-Scraped data from page 10
+2026-04-20 01:01:10,957-ERROR-root-'NoneType' object is not iterable
+2026-04-20 01:01:10,957-INFO-root-inserted the data into the tables..
+2026-04-20 01:01:11,588-ERROR-root-name 'pd' is not defined
+2026-04-20 01:01:11,588-INFO-root-Scraped data from page 11
+2026-04-20 01:01:11,588-ERROR-root-'NoneType' object is not iterable
+2026-04-20 01:01:11,588-INFO-root-inserted the data into the tables..
+2026-04-20 01:01:12,296-ERROR-root-name 'pd' is not defined
+2026-04-20 01:01:12,297-INFO-root-Scraped data from page 12
+2026-04-20 01:01:12,297-ERROR-root-'NoneType' object is not iterable
+2026-04-20 01:01:12,297-INFO-root-inserted the data into the tables..
+2026-04-20 01:01:13,112-ERROR-root-name 'pd' is not defined
+2026-04-20 01:01:13,112-INFO-root-Scraped data from page 13
+2026-04-20 01:01:13,112-ERROR-root-'NoneType' object is not iterable
+2026-04-20 01:01:13,113-INFO-root-inserted the data into the tables..
+2026-04-20 01:01:13,907-ERROR-root-name 'pd' is not defined
+2026-04-20 01:01:13,907-INFO-root-Scraped data from page 14
+2026-04-20 01:01:13,907-ERROR-root-'NoneType' object is not iterable
+2026-04-20 01:01:13,907-INFO-root-inserted the data into the tables..
+2026-04-20 01:01:14,698-ERROR-root-name 'pd' is not defined
+2026-04-20 01:01:14,698-INFO-root-Scraped data from page 15
+2026-04-20 01:01:14,699-ERROR-root-'NoneType' object is not iterable
+2026-04-20 01:01:14,699-INFO-root-inserted the data into the tables..
+2026-04-20 01:01:15,668-ERROR-root-name 'pd' is not defined
+2026-04-20 01:01:15,669-INFO-root-Scraped data from page 16
+2026-04-20 01:01:15,669-ERROR-root-'NoneType' object is not iterable
+2026-04-20 01:01:15,669-INFO-root-inserted the data into the tables..
+2026-04-20 01:01:16,339-ERROR-root-name 'pd' is not defined
+2026-04-20 01:01:16,339-INFO-root-Scraped data from page 17
+2026-04-20 01:01:16,340-ERROR-root-'NoneType' object is not iterable
+2026-04-20 01:01:16,340-INFO-root-inserted the data into the tables..
+2026-04-20 01:01:17,024-ERROR-root-name 'pd' is not defined
+2026-04-20 01:01:17,024-INFO-root-Scraped data from page 18
+2026-04-20 01:01:17,024-ERROR-root-'NoneType' object is not iterable
+2026-04-20 01:01:17,024-INFO-root-inserted the data into the tables..
+2026-04-20 01:01:17,708-ERROR-root-name 'pd' is not defined
+2026-04-20 01:01:17,708-INFO-root-Scraped data from page 19
+2026-04-20 01:01:17,708-ERROR-root-'NoneType' object is not iterable
+2026-04-20 01:01:17,708-INFO-root-inserted the data into the tables..
+2026-04-20 01:01:18,429-ERROR-root-name 'pd' is not defined
+2026-04-20 01:01:18,429-INFO-root-Scraped data from page 20
+2026-04-20 01:01:18,429-ERROR-root-'NoneType' object is not iterable
+2026-04-20 01:01:18,429-INFO-root-inserted the data into the tables..
+2026-04-20 01:11:11,869-INFO-root-Execution started..
+2026-04-20 01:11:12,655-INFO-root-Scraped data from page 1
+2026-04-20 01:11:12,659-INFO-root-inserted the data into the tables..
+2026-04-20 01:11:13,358-INFO-root-Scraped data from page 2
+2026-04-20 01:11:13,363-INFO-root-inserted the data into the tables..
+2026-04-20 01:11:14,062-INFO-root-Scraped data from page 3
+2026-04-20 01:11:14,066-INFO-root-inserted the data into the tables..
+2026-04-20 01:11:14,798-INFO-root-Scraped data from page 4
+2026-04-20 01:11:14,802-INFO-root-inserted the data into the tables..
+2026-04-20 01:11:15,593-INFO-root-Scraped data from page 5
+2026-04-20 01:11:15,597-INFO-root-inserted the data into the tables..
+2026-04-20 01:11:16,357-INFO-root-Scraped data from page 6
+2026-04-20 01:11:16,362-INFO-root-inserted the data into the tables..
+2026-04-20 01:11:17,150-INFO-root-Scraped data from page 7
+2026-04-20 01:11:17,155-INFO-root-inserted the data into the tables..
+2026-04-20 01:11:18,032-INFO-root-Scraped data from page 8
+2026-04-20 01:11:18,035-INFO-root-inserted the data into the tables..
+2026-04-20 01:11:18,731-INFO-root-Scraped data from page 9
+2026-04-20 01:11:18,736-INFO-root-inserted the data into the tables..
+2026-04-20 01:11:19,429-INFO-root-Scraped data from page 10
+2026-04-20 01:11:19,432-INFO-root-inserted the data into the tables..
+2026-04-20 01:11:20,039-INFO-root-Scraped data from page 11
+2026-04-20 01:11:20,039-INFO-root-inserted the data into the tables..
+2026-04-20 01:11:20,709-INFO-root-Scraped data from page 12
+2026-04-20 01:11:20,710-INFO-root-inserted the data into the tables..
+2026-04-20 01:11:21,569-INFO-root-Scraped data from page 13
+2026-04-20 01:11:21,570-INFO-root-inserted the data into the tables..
+2026-04-20 01:11:22,171-INFO-root-Scraped data from page 14
+2026-04-20 01:11:22,171-INFO-root-inserted the data into the tables..
+2026-04-20 01:11:23,046-INFO-root-Scraped data from page 15
+2026-04-20 01:11:23,046-INFO-root-inserted the data into the tables..
+2026-04-20 01:11:23,906-INFO-root-Scraped data from page 16
+2026-04-20 01:11:23,910-INFO-root-inserted the data into the tables..
+2026-04-20 01:11:24,579-INFO-root-Scraped data from page 17
+2026-04-20 01:11:24,584-INFO-root-inserted the data into the tables..
+2026-04-20 01:11:25,385-INFO-root-Scraped data from page 18
+2026-04-20 01:11:25,387-ERROR-root-'NoneType' object is not subscriptable
+2026-04-20 01:11:25,387-INFO-root-inserted the data into the tables..
+2026-04-20 01:11:26,037-INFO-root-Scraped data from page 19
+2026-04-20 01:11:26,039-ERROR-root-'NoneType' object is not subscriptable
+2026-04-20 01:11:26,039-INFO-root-inserted the data into the tables..
+2026-04-20 01:11:26,643-INFO-root-Scraped data from page 20
+2026-04-20 01:11:26,645-ERROR-root-'NoneType' object is not subscriptable
+2026-04-20 01:11:26,645-INFO-root-inserted the data into the tables..
+2026-04-20 01:29:53,542 | INFO | mainscrip.py:25 | <module>() | Execution started..
+2026-04-20 01:29:54,562 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 1
+2026-04-20 01:29:54,566 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:29:55,650 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 2
+2026-04-20 01:29:55,654 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:29:56,473 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 3
+2026-04-20 01:29:56,477 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:29:57,229 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 4
+2026-04-20 01:29:57,233 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:29:57,927 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 5
+2026-04-20 01:29:57,931 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:29:58,687 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 6
+2026-04-20 01:29:58,691 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:29:59,544 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 7
+2026-04-20 01:29:59,549 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:30:00,272 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 8
+2026-04-20 01:30:00,276 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:30:01,065 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 9
+2026-04-20 01:30:01,069 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:30:01,900 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 10
+2026-04-20 01:30:01,904 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:30:02,698 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 11
+2026-04-20 01:30:02,698 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:30:03,419 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 12
+2026-04-20 01:30:03,420 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:30:04,095 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 13
+2026-04-20 01:30:04,095 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:30:05,218 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 14
+2026-04-20 01:30:05,218 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:30:06,137 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 15
+2026-04-20 01:30:06,137 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:30:07,433 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 16
+2026-04-20 01:30:07,436 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:30:08,066 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 17
+2026-04-20 01:30:08,081 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:30:08,803 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 18
+2026-04-20 01:30:08,806 | ERROR | db_manager.py:50 | manage_operation() | 'NoneType' object is not subscriptable
+2026-04-20 01:30:08,806 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:30:09,548 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 19
+2026-04-20 01:30:09,550 | ERROR | db_manager.py:50 | manage_operation() | 'NoneType' object is not subscriptable
+2026-04-20 01:30:09,551 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:30:10,163 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 20
+2026-04-20 01:30:10,165 | ERROR | db_manager.py:50 | manage_operation() | 'NoneType' object is not subscriptable
+2026-04-20 01:30:10,166 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:32:55,999 | INFO | mainscrip.py:25 | <module>() | Execution started..
+2026-04-20 01:32:56,006 | ERROR | fetcher.py:13 | get_soup() | HTTPSConnectionPool(host='internshala.com', port=443): Max retries exceeded with url: /jobs/net-development,ai-agent-development,asp-net,android-app-development,angular-js-development,backend-development,cloud-computing,cyber-security,front-end-development,full-stack-development,game-development,java,javascript-development,machine-learning,node-js-development,python-django,web-development-jobs/ (Caused by NameResolutionError("HTTPSConnection(host='internshala.com', port=443): Failed to resolve 'internshala.com' ([Errno 11001] getaddrinfo failed)"))
+2026-04-20 01:32:56,007 | ERROR | extractor.py:62 | scrape_data() | 'NoneType' object has no attribute 'find_all'
+2026-04-20 01:32:56,008 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 1
+2026-04-20 01:32:56,008 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:32:56,008 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:32:56,010 | ERROR | fetcher.py:13 | get_soup() | HTTPSConnectionPool(host='internshala.com', port=443): Max retries exceeded with url: /jobs/net-development,ai-agent-development,asp-net,android-app-development,angular-js-development,backend-development,cloud-computing,cyber-security,front-end-development,full-stack-development,game-development,java,javascript-development,machine-learning,node-js-development,python-django,web-development-jobs/page-2 (Caused by NameResolutionError("HTTPSConnection(host='internshala.com', port=443): Failed to resolve 'internshala.com' ([Errno 11001] getaddrinfo failed)"))
+2026-04-20 01:32:56,010 | ERROR | extractor.py:62 | scrape_data() | 'NoneType' object has no attribute 'find_all'
+2026-04-20 01:32:56,010 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 2
+2026-04-20 01:32:56,011 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:32:56,011 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:32:56,013 | ERROR | fetcher.py:13 | get_soup() | HTTPSConnectionPool(host='internshala.com', port=443): Max retries exceeded with url: /jobs/net-development,ai-agent-development,asp-net,android-app-development,angular-js-development,backend-development,cloud-computing,cyber-security,front-end-development,full-stack-development,game-development,java,javascript-development,machine-learning,node-js-development,python-django,web-development-jobs/page-3 (Caused by NameResolutionError("HTTPSConnection(host='internshala.com', port=443): Failed to resolve 'internshala.com' ([Errno 11001] getaddrinfo failed)"))
+2026-04-20 01:32:56,013 | ERROR | extractor.py:62 | scrape_data() | 'NoneType' object has no attribute 'find_all'
+2026-04-20 01:32:56,013 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 3
+2026-04-20 01:32:56,013 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:32:56,013 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:32:56,014 | ERROR | fetcher.py:13 | get_soup() | HTTPSConnectionPool(host='internshala.com', port=443): Max retries exceeded with url: /jobs/net-development,ai-agent-development,asp-net,android-app-development,angular-js-development,backend-development,cloud-computing,cyber-security,front-end-development,full-stack-development,game-development,java,javascript-development,machine-learning,node-js-development,python-django,web-development-jobs/page-4 (Caused by NameResolutionError("HTTPSConnection(host='internshala.com', port=443): Failed to resolve 'internshala.com' ([Errno 11001] getaddrinfo failed)"))
+2026-04-20 01:32:56,015 | ERROR | extractor.py:62 | scrape_data() | 'NoneType' object has no attribute 'find_all'
+2026-04-20 01:32:56,015 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 4
+2026-04-20 01:32:56,015 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:32:56,015 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:32:56,016 | ERROR | fetcher.py:13 | get_soup() | HTTPSConnectionPool(host='internshala.com', port=443): Max retries exceeded with url: /jobs/net-development,ai-agent-development,asp-net,android-app-development,angular-js-development,backend-development,cloud-computing,cyber-security,front-end-development,full-stack-development,game-development,java,javascript-development,machine-learning,node-js-development,python-django,web-development-jobs/page-5 (Caused by NameResolutionError("HTTPSConnection(host='internshala.com', port=443): Failed to resolve 'internshala.com' ([Errno 11001] getaddrinfo failed)"))
+2026-04-20 01:32:56,016 | ERROR | extractor.py:62 | scrape_data() | 'NoneType' object has no attribute 'find_all'
+2026-04-20 01:32:56,016 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 5
+2026-04-20 01:32:56,016 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:32:56,016 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:32:56,017 | ERROR | fetcher.py:13 | get_soup() | HTTPSConnectionPool(host='internshala.com', port=443): Max retries exceeded with url: /jobs/net-development,ai-agent-development,asp-net,android-app-development,angular-js-development,backend-development,cloud-computing,cyber-security,front-end-development,full-stack-development,game-development,java,javascript-development,machine-learning,node-js-development,python-django,web-development-jobs/page-6 (Caused by NameResolutionError("HTTPSConnection(host='internshala.com', port=443): Failed to resolve 'internshala.com' ([Errno 11001] getaddrinfo failed)"))
+2026-04-20 01:32:56,017 | ERROR | extractor.py:62 | scrape_data() | 'NoneType' object has no attribute 'find_all'
+2026-04-20 01:32:56,018 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 6
+2026-04-20 01:32:56,018 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:32:56,018 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:32:56,019 | ERROR | fetcher.py:13 | get_soup() | HTTPSConnectionPool(host='internshala.com', port=443): Max retries exceeded with url: /jobs/net-development,ai-agent-development,asp-net,android-app-development,angular-js-development,backend-development,cloud-computing,cyber-security,front-end-development,full-stack-development,game-development,java,javascript-development,machine-learning,node-js-development,python-django,web-development-jobs/page-7 (Caused by NameResolutionError("HTTPSConnection(host='internshala.com', port=443): Failed to resolve 'internshala.com' ([Errno 11001] getaddrinfo failed)"))
+2026-04-20 01:32:56,019 | ERROR | extractor.py:62 | scrape_data() | 'NoneType' object has no attribute 'find_all'
+2026-04-20 01:32:56,019 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 7
+2026-04-20 01:32:56,019 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:32:56,019 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:32:56,020 | ERROR | fetcher.py:13 | get_soup() | HTTPSConnectionPool(host='internshala.com', port=443): Max retries exceeded with url: /jobs/net-development,ai-agent-development,asp-net,android-app-development,angular-js-development,backend-development,cloud-computing,cyber-security,front-end-development,full-stack-development,game-development,java,javascript-development,machine-learning,node-js-development,python-django,web-development-jobs/page-8 (Caused by NameResolutionError("HTTPSConnection(host='internshala.com', port=443): Failed to resolve 'internshala.com' ([Errno 11001] getaddrinfo failed)"))
+2026-04-20 01:32:56,021 | ERROR | extractor.py:62 | scrape_data() | 'NoneType' object has no attribute 'find_all'
+2026-04-20 01:32:56,021 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 8
+2026-04-20 01:32:56,021 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:32:56,021 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:32:56,022 | ERROR | fetcher.py:13 | get_soup() | HTTPSConnectionPool(host='internshala.com', port=443): Max retries exceeded with url: /jobs/net-development,ai-agent-development,asp-net,android-app-development,angular-js-development,backend-development,cloud-computing,cyber-security,front-end-development,full-stack-development,game-development,java,javascript-development,machine-learning,node-js-development,python-django,web-development-jobs/page-9 (Caused by NameResolutionError("HTTPSConnection(host='internshala.com', port=443): Failed to resolve 'internshala.com' ([Errno 11001] getaddrinfo failed)"))
+2026-04-20 01:32:56,023 | ERROR | extractor.py:62 | scrape_data() | 'NoneType' object has no attribute 'find_all'
+2026-04-20 01:32:56,023 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 9
+2026-04-20 01:32:56,023 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:32:56,023 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:32:56,025 | ERROR | fetcher.py:13 | get_soup() | HTTPSConnectionPool(host='internshala.com', port=443): Max retries exceeded with url: /jobs/net-development,ai-agent-development,asp-net,android-app-development,angular-js-development,backend-development,cloud-computing,cyber-security,front-end-development,full-stack-development,game-development,java,javascript-development,machine-learning,node-js-development,python-django,web-development-jobs/page-10 (Caused by NameResolutionError("HTTPSConnection(host='internshala.com', port=443): Failed to resolve 'internshala.com' ([Errno 11001] getaddrinfo failed)"))
+2026-04-20 01:32:56,026 | ERROR | extractor.py:62 | scrape_data() | 'NoneType' object has no attribute 'find_all'
+2026-04-20 01:32:56,027 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 10
+2026-04-20 01:32:56,027 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:32:56,027 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:32:56,029 | ERROR | fetcher.py:13 | get_soup() | HTTPSConnectionPool(host='internshala.com', port=443): Max retries exceeded with url: /jobs/net-development,ai-agent-development,asp-net,android-app-development,angular-js-development,backend-development,cloud-computing,cyber-security,front-end-development,full-stack-development,game-development,java,javascript-development,machine-learning,node-js-development,python-django,web-development-jobs/page-11 (Caused by NameResolutionError("HTTPSConnection(host='internshala.com', port=443): Failed to resolve 'internshala.com' ([Errno 11001] getaddrinfo failed)"))
+2026-04-20 01:32:56,029 | ERROR | extractor.py:62 | scrape_data() | 'NoneType' object has no attribute 'find_all'
+2026-04-20 01:32:56,029 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 11
+2026-04-20 01:32:56,029 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:32:56,029 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:32:56,031 | ERROR | fetcher.py:13 | get_soup() | HTTPSConnectionPool(host='internshala.com', port=443): Max retries exceeded with url: /jobs/net-development,ai-agent-development,asp-net,android-app-development,angular-js-development,backend-development,cloud-computing,cyber-security,front-end-development,full-stack-development,game-development,java,javascript-development,machine-learning,node-js-development,python-django,web-development-jobs/page-12 (Caused by NameResolutionError("HTTPSConnection(host='internshala.com', port=443): Failed to resolve 'internshala.com' ([Errno 11001] getaddrinfo failed)"))
+2026-04-20 01:32:56,031 | ERROR | extractor.py:62 | scrape_data() | 'NoneType' object has no attribute 'find_all'
+2026-04-20 01:32:56,032 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 12
+2026-04-20 01:32:56,032 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:32:56,032 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:32:56,034 | ERROR | fetcher.py:13 | get_soup() | HTTPSConnectionPool(host='internshala.com', port=443): Max retries exceeded with url: /jobs/net-development,ai-agent-development,asp-net,android-app-development,angular-js-development,backend-development,cloud-computing,cyber-security,front-end-development,full-stack-development,game-development,java,javascript-development,machine-learning,node-js-development,python-django,web-development-jobs/page-13 (Caused by NameResolutionError("HTTPSConnection(host='internshala.com', port=443): Failed to resolve 'internshala.com' ([Errno 11001] getaddrinfo failed)"))
+2026-04-20 01:32:56,035 | ERROR | extractor.py:62 | scrape_data() | 'NoneType' object has no attribute 'find_all'
+2026-04-20 01:32:56,035 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 13
+2026-04-20 01:32:56,035 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:32:56,035 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:32:56,037 | ERROR | fetcher.py:13 | get_soup() | HTTPSConnectionPool(host='internshala.com', port=443): Max retries exceeded with url: /jobs/net-development,ai-agent-development,asp-net,android-app-development,angular-js-development,backend-development,cloud-computing,cyber-security,front-end-development,full-stack-development,game-development,java,javascript-development,machine-learning,node-js-development,python-django,web-development-jobs/page-14 (Caused by NameResolutionError("HTTPSConnection(host='internshala.com', port=443): Failed to resolve 'internshala.com' ([Errno 11001] getaddrinfo failed)"))
+2026-04-20 01:32:56,037 | ERROR | extractor.py:62 | scrape_data() | 'NoneType' object has no attribute 'find_all'
+2026-04-20 01:32:56,037 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 14
+2026-04-20 01:32:56,037 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:32:56,037 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:32:56,038 | ERROR | fetcher.py:13 | get_soup() | HTTPSConnectionPool(host='internshala.com', port=443): Max retries exceeded with url: /jobs/net-development,ai-agent-development,asp-net,android-app-development,angular-js-development,backend-development,cloud-computing,cyber-security,front-end-development,full-stack-development,game-development,java,javascript-development,machine-learning,node-js-development,python-django,web-development-jobs/page-15 (Caused by NameResolutionError("HTTPSConnection(host='internshala.com', port=443): Failed to resolve 'internshala.com' ([Errno 11001] getaddrinfo failed)"))
+2026-04-20 01:32:56,039 | ERROR | extractor.py:62 | scrape_data() | 'NoneType' object has no attribute 'find_all'
+2026-04-20 01:32:56,039 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 15
+2026-04-20 01:32:56,039 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:32:56,039 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:32:56,040 | ERROR | fetcher.py:13 | get_soup() | HTTPSConnectionPool(host='internshala.com', port=443): Max retries exceeded with url: /jobs/net-development,ai-agent-development,asp-net,android-app-development,angular-js-development,backend-development,cloud-computing,cyber-security,front-end-development,full-stack-development,game-development,java,javascript-development,machine-learning,node-js-development,python-django,web-development-jobs/page-16 (Caused by NameResolutionError("HTTPSConnection(host='internshala.com', port=443): Failed to resolve 'internshala.com' ([Errno 11001] getaddrinfo failed)"))
+2026-04-20 01:32:56,041 | ERROR | extractor.py:62 | scrape_data() | 'NoneType' object has no attribute 'find_all'
+2026-04-20 01:32:56,041 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 16
+2026-04-20 01:32:56,041 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:32:56,041 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:32:56,042 | ERROR | fetcher.py:13 | get_soup() | HTTPSConnectionPool(host='internshala.com', port=443): Max retries exceeded with url: /jobs/net-development,ai-agent-development,asp-net,android-app-development,angular-js-development,backend-development,cloud-computing,cyber-security,front-end-development,full-stack-development,game-development,java,javascript-development,machine-learning,node-js-development,python-django,web-development-jobs/page-17 (Caused by NameResolutionError("HTTPSConnection(host='internshala.com', port=443): Failed to resolve 'internshala.com' ([Errno 11001] getaddrinfo failed)"))
+2026-04-20 01:32:56,043 | ERROR | extractor.py:62 | scrape_data() | 'NoneType' object has no attribute 'find_all'
+2026-04-20 01:32:56,043 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 17
+2026-04-20 01:32:56,043 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:32:56,043 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:32:56,045 | ERROR | fetcher.py:13 | get_soup() | HTTPSConnectionPool(host='internshala.com', port=443): Max retries exceeded with url: /jobs/net-development,ai-agent-development,asp-net,android-app-development,angular-js-development,backend-development,cloud-computing,cyber-security,front-end-development,full-stack-development,game-development,java,javascript-development,machine-learning,node-js-development,python-django,web-development-jobs/page-18 (Caused by NameResolutionError("HTTPSConnection(host='internshala.com', port=443): Failed to resolve 'internshala.com' ([Errno 11001] getaddrinfo failed)"))
+2026-04-20 01:32:56,045 | ERROR | extractor.py:62 | scrape_data() | 'NoneType' object has no attribute 'find_all'
+2026-04-20 01:32:56,045 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 18
+2026-04-20 01:32:56,046 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:32:56,046 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:32:56,047 | ERROR | fetcher.py:13 | get_soup() | HTTPSConnectionPool(host='internshala.com', port=443): Max retries exceeded with url: /jobs/net-development,ai-agent-development,asp-net,android-app-development,angular-js-development,backend-development,cloud-computing,cyber-security,front-end-development,full-stack-development,game-development,java,javascript-development,machine-learning,node-js-development,python-django,web-development-jobs/page-19 (Caused by NameResolutionError("HTTPSConnection(host='internshala.com', port=443): Failed to resolve 'internshala.com' ([Errno 11001] getaddrinfo failed)"))
+2026-04-20 01:32:56,047 | ERROR | extractor.py:62 | scrape_data() | 'NoneType' object has no attribute 'find_all'
+2026-04-20 01:32:56,048 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 19
+2026-04-20 01:32:56,048 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:32:56,048 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:32:56,049 | ERROR | fetcher.py:13 | get_soup() | HTTPSConnectionPool(host='internshala.com', port=443): Max retries exceeded with url: /jobs/net-development,ai-agent-development,asp-net,android-app-development,angular-js-development,backend-development,cloud-computing,cyber-security,front-end-development,full-stack-development,game-development,java,javascript-development,machine-learning,node-js-development,python-django,web-development-jobs/page-20 (Caused by NameResolutionError("HTTPSConnection(host='internshala.com', port=443): Failed to resolve 'internshala.com' ([Errno 11001] getaddrinfo failed)"))
+2026-04-20 01:32:56,050 | ERROR | extractor.py:62 | scrape_data() | 'NoneType' object has no attribute 'find_all'
+2026-04-20 01:32:56,050 | INFO | mainscrip.py:36 | internshala() | Scraped data from page 20
+2026-04-20 01:32:56,050 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:32:56,050 | INFO | mainscrip.py:38 | internshala() | inserted the data into the tables..
+2026-04-20 01:47:32,606 | INFO | mainscrip.py:23 | <module>() | Execution started..
+2026-04-20 01:47:33,334 | ERROR | extractor.py:77 | scrape_data() | cannot access local variable 'posted_time' where it is not associated with a value
+2026-04-20 01:47:33,334 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 1
+2026-04-20 01:47:33,335 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:47:33,335 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:47:34,009 | ERROR | extractor.py:77 | scrape_data() | cannot access local variable 'posted_time' where it is not associated with a value
+2026-04-20 01:47:34,009 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 2
+2026-04-20 01:47:34,010 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:47:34,010 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:47:34,805 | ERROR | extractor.py:77 | scrape_data() | cannot access local variable 'posted_time' where it is not associated with a value
+2026-04-20 01:47:34,806 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 3
+2026-04-20 01:47:34,806 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:47:34,807 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:47:35,480 | ERROR | extractor.py:77 | scrape_data() | cannot access local variable 'posted_time' where it is not associated with a value
+2026-04-20 01:47:35,480 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 4
+2026-04-20 01:47:35,481 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:47:35,481 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:47:36,406 | ERROR | extractor.py:77 | scrape_data() | cannot access local variable 'posted_time' where it is not associated with a value
+2026-04-20 01:47:36,407 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 5
+2026-04-20 01:47:36,407 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:47:36,407 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:47:37,284 | ERROR | extractor.py:77 | scrape_data() | cannot access local variable 'posted_time' where it is not associated with a value
+2026-04-20 01:47:37,284 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 6
+2026-04-20 01:47:37,284 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:47:37,284 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:47:38,049 | ERROR | extractor.py:77 | scrape_data() | cannot access local variable 'posted_time' where it is not associated with a value
+2026-04-20 01:47:38,049 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 7
+2026-04-20 01:47:38,049 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:47:38,050 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:47:38,775 | ERROR | extractor.py:77 | scrape_data() | cannot access local variable 'posted_time' where it is not associated with a value
+2026-04-20 01:47:38,775 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 8
+2026-04-20 01:47:38,776 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:47:38,776 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:47:39,674 | ERROR | extractor.py:77 | scrape_data() | cannot access local variable 'posted_time' where it is not associated with a value
+2026-04-20 01:47:39,674 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 9
+2026-04-20 01:47:39,675 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:47:39,675 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:47:40,400 | ERROR | extractor.py:77 | scrape_data() | cannot access local variable 'posted_time' where it is not associated with a value
+2026-04-20 01:47:40,401 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 10
+2026-04-20 01:47:40,402 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:47:40,403 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:47:41,020 | ERROR | extractor.py:77 | scrape_data() | cannot access local variable 'posted_time' where it is not associated with a value
+2026-04-20 01:47:41,021 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 11
+2026-04-20 01:47:41,021 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:47:41,021 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:47:41,739 | ERROR | extractor.py:77 | scrape_data() | cannot access local variable 'posted_time' where it is not associated with a value
+2026-04-20 01:47:41,740 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 12
+2026-04-20 01:47:41,740 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:47:41,740 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:47:42,373 | ERROR | extractor.py:77 | scrape_data() | cannot access local variable 'posted_time' where it is not associated with a value
+2026-04-20 01:47:42,373 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 13
+2026-04-20 01:47:42,373 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:47:42,374 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:47:43,276 | ERROR | extractor.py:77 | scrape_data() | cannot access local variable 'posted_time' where it is not associated with a value
+2026-04-20 01:47:43,277 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 14
+2026-04-20 01:47:43,277 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:47:43,277 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:47:44,100 | ERROR | extractor.py:77 | scrape_data() | cannot access local variable 'posted_time' where it is not associated with a value
+2026-04-20 01:47:44,101 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 15
+2026-04-20 01:47:44,101 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:47:44,101 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:47:44,822 | ERROR | extractor.py:77 | scrape_data() | cannot access local variable 'posted_time' where it is not associated with a value
+2026-04-20 01:47:44,822 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 16
+2026-04-20 01:47:44,823 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:47:44,823 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:47:46,447 | ERROR | extractor.py:77 | scrape_data() | cannot access local variable 'posted_time' where it is not associated with a value
+2026-04-20 01:47:46,447 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 17
+2026-04-20 01:47:46,448 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:47:46,448 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:47:47,107 | ERROR | extractor.py:77 | scrape_data() | cannot access local variable 'posted_time' where it is not associated with a value
+2026-04-20 01:47:47,107 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 18
+2026-04-20 01:47:47,108 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:47:47,108 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:47:47,764 | ERROR | extractor.py:77 | scrape_data() | cannot access local variable 'posted_time' where it is not associated with a value
+2026-04-20 01:47:47,765 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 19
+2026-04-20 01:47:47,765 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:47:47,765 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:47:48,233 | ERROR | extractor.py:77 | scrape_data() | cannot access local variable 'posted_time' where it is not associated with a value
+2026-04-20 01:47:48,233 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 20
+2026-04-20 01:47:48,233 | ERROR | db_manager.py:52 | manage_operation() | 'NoneType' object is not iterable
+2026-04-20 01:47:48,234 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:57:58,316 | INFO | mainscrip.py:23 | <module>() | Execution started..
+2026-04-20 01:57:59,121 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 1
+2026-04-20 01:57:59,124 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:57:59,845 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 2
+2026-04-20 01:57:59,850 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:58:00,628 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 3
+2026-04-20 01:58:00,631 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:58:01,548 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 4
+2026-04-20 01:58:01,551 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:58:02,368 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 5
+2026-04-20 01:58:02,371 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:58:03,256 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 6
+2026-04-20 01:58:03,260 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:58:04,091 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 7
+2026-04-20 01:58:04,095 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:58:04,785 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 8
+2026-04-20 01:58:04,790 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:58:05,529 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 9
+2026-04-20 01:58:05,533 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:58:06,329 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 10
+2026-04-20 01:58:06,334 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:58:07,129 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 11
+2026-04-20 01:58:07,129 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:58:07,836 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 12
+2026-04-20 01:58:07,837 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:58:08,636 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 13
+2026-04-20 01:58:08,637 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:58:09,324 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 14
+2026-04-20 01:58:09,325 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:58:09,991 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 15
+2026-04-20 01:58:09,991 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:58:10,990 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 16
+2026-04-20 01:58:10,994 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:58:11,795 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 17
+2026-04-20 01:58:11,801 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:58:12,622 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 18
+2026-04-20 01:58:12,628 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:58:13,350 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 19
+2026-04-20 01:58:13,356 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 01:58:14,006 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 20
+2026-04-20 01:58:14,010 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 15:56:05,197 | INFO | mainscrip.py:23 | <module>() | Execution started..
+2026-04-20 15:56:06,662 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 1
+2026-04-20 15:56:06,666 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 15:56:07,856 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 2
+2026-04-20 15:56:07,859 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 15:56:08,557 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 3
+2026-04-20 15:56:08,560 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 15:56:09,255 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 4
+2026-04-20 15:56:09,260 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 15:56:09,946 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 5
+2026-04-20 15:56:09,950 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 15:56:10,668 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 6
+2026-04-20 15:56:10,672 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 15:56:11,273 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 7
+2026-04-20 15:56:11,276 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 15:56:11,981 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 8
+2026-04-20 15:56:11,984 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 15:56:12,959 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 9
+2026-04-20 15:56:12,963 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 15:56:13,591 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 10
+2026-04-20 15:56:13,595 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 15:56:14,681 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 11
+2026-04-20 15:56:14,681 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 15:56:15,431 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 12
+2026-04-20 15:56:15,431 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 15:56:16,475 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 13
+2026-04-20 15:56:16,476 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 15:56:17,366 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 14
+2026-04-20 15:56:17,367 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 15:56:18,203 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 15
+2026-04-20 15:56:18,203 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 15:56:19,034 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 16
+2026-04-20 15:56:19,038 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 15:56:19,636 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 17
+2026-04-20 15:56:19,640 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 15:56:20,239 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 18
+2026-04-20 15:56:20,245 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 15:56:20,858 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 19
+2026-04-20 15:56:20,864 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-04-20 15:56:21,674 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 20
+2026-04-20 15:56:21,680 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..

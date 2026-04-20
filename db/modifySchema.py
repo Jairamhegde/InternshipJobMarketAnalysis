@@ -1,6 +1,9 @@
 import sqlite3
 import logging
 import os
+logging.basicConfig(
+    filename = "logfile.log"
+)
 BASE_DIR = os.path.dirname(os.path.dirname(__file__)) 
 db_path = os.path.join(BASE_DIR, "jobs.db")
 conn=sqlite3.connect(db_path)
@@ -51,8 +54,10 @@ def clearTable():
     cur.execute('DELETE FROM jobs')
     cur.execute('DELETE FROM skills')
     cur.execute('DELETE FROM job_skills')
+    cur.execute('DELETE FROM jobSnapshot')
     conn.commit()
     conn.close()
+    logging.info("cleared table...")
 
 
 # cur.execute('''
@@ -62,11 +67,13 @@ def clearTable():
 #         PRIMARY KEY(job_id,scraped_date));
 # ''')
 
-cur.execute('''
-insert into jobSnapshot(job_id,scraped_date)
-            select j_id,scraped_time from jobs;
+# cur.execute('''
+# insert into jobSnapshot(job_id,scraped_date)
+#             select j_id,scraped_time from jobs;
 
 
-''')
+# ''')
+
+clearTable()
 conn.commit()
 conn.close()

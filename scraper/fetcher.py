@@ -10,4 +10,4 @@ def get_soup(url):
                 soup=BeautifulSoup(html,"html.parser")
                 return soup
         except Exception as e:
-                logging.ERROR(e)
+                logging.error(e)

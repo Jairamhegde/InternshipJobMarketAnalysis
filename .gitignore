@@ -2,3 +2,6 @@
 databaseTrial.py
 __pycache__/
 insights/*.csv
+problemsfaced.txt
+*.csv
+ap.py
