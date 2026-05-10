@@ -72,8 +72,57 @@ def clearTable():
 #             select j_id,scraped_time from jobs;
 
 
-# ''')
 
-clearTable()
+
+query = """ALTER TABLE jobs
+MODIFY salary INT """
+
+minsalCol = '''
+ALTER TABLE jobs
+ADD minsal int;
+'''
+maxslaCol = '''
+ALTER TABLE jobs
+ADD maxsal int;
+'''
+
+fetchIdsal = '''
+SELECT j_id,salary FROM jobs;
+'''
+# cur.execute(fetchIdsal)
+
+rows = cur.fetchall()
+for row in rows:
+    
+    rowid = row[0]
+    sal = row[1]
+    minsal = None
+    maxsal = None
+    if sal:
+        try:
+    
+            if "-" in sal:
+                minsal,maxsal = sal.split("-")
+                minsal = int(minsal.replace(",","").replace("₹","").strip())
+                maxsal = int(maxsal.replace(",","").replace("₹","").strip())
+            else:
+                minsal = maxsal = int(sal.replace(",","").replace("₹","").strip())
+        except ValueError:
+            minsal = None
+            maxsal = None    
+    myquery = """
+    UPDATE jobs
+    SET minsal = ?,maxsal = ?
+    WHERE j_id = ?
+    """
+    # cur.execute(myquery,(minsal,maxsal,rowid))
+    
+
+# Drop the salary column from jobs
+dropsal = """
+ALTER TABLE jobs
+drop Salary;
+"""
+cur.execute(dropsal)
 conn.commit()
 conn.close()

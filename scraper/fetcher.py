@@ -11,3 +11,5 @@ def get_soup(url):
                 return soup
         except Exception as e:
                 logging.error(e)
+
+

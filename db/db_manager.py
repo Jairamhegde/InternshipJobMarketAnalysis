@@ -12,15 +12,16 @@ def manage_operation(jd):
         for i in jd:
              if i['TechStack'] and i['company'] and i['job']:
                 cur.execute(
-                        'INSERT OR IGNORE INTO jobs(j_title,location,salary,status,company,scraped_time,postedDate) values(?,?,?,?,?,?,?)',
+                        'INSERT OR IGNORE INTO jobs(j_title,location,status,company,scraped_time,postedDate,minsal,maxsal) values(?,?,?,?,?,?,?,?)',
                         (
                             i['job'],
                             i['Location'],
-                            i['Salary'],
                             i['status'],
                             i['company'],
                             i['Scrape_time'],
-                            i['posted_date']
+                            i['posted_date'],
+                            i['min_sal'],
+                            i['max_sal']
                         )
                         )
                 if cur.rowcount == 1:

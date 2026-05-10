@@ -1062,3 +1062,106 @@
 2026-04-20 15:56:20,864 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
 2026-04-20 15:56:21,674 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 20
 2026-04-20 15:56:21,680 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-05-07 23:45:08,020 | INFO | mainscrip.py:23 | <module>() | Execution started..
+2026-05-07 23:45:09,761 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 1
+2026-05-07 23:45:09,788 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-05-07 23:45:11,326 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 2
+2026-05-07 23:45:11,363 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-05-07 23:45:12,884 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 3
+2026-05-07 23:45:12,922 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-05-07 23:45:14,493 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 4
+2026-05-07 23:45:14,517 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-05-07 23:45:16,135 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 5
+2026-05-07 23:45:16,160 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-05-07 23:45:17,962 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 6
+2026-05-07 23:45:17,987 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-05-07 23:45:19,512 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 7
+2026-05-07 23:45:19,539 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-05-07 23:45:21,076 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 8
+2026-05-07 23:45:21,097 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-05-07 23:45:22,668 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 9
+2026-05-07 23:45:22,685 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-05-07 23:45:24,270 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 10
+2026-05-07 23:45:24,272 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-05-07 23:45:25,720 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 11
+2026-05-07 23:45:25,721 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-05-07 23:45:27,479 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 12
+2026-05-07 23:45:27,480 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-05-07 23:45:29,174 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 13
+2026-05-07 23:45:29,175 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-05-07 23:45:31,454 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 14
+2026-05-07 23:45:31,455 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-05-07 23:45:33,193 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 15
+2026-05-07 23:45:33,194 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-05-07 23:45:34,965 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 16
+2026-05-07 23:45:34,977 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-05-07 23:45:36,619 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 17
+2026-05-07 23:45:36,621 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-05-07 23:45:37,987 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 18
+2026-05-07 23:45:38,003 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-05-07 23:45:39,606 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 19
+2026-05-07 23:45:39,630 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-05-07 23:45:41,551 | INFO | mainscrip.py:34 | internshala() | Scraped data from page 20
+2026-05-07 23:45:41,565 | INFO | mainscrip.py:36 | internshala() | inserted the data into the tables..
+2026-05-10 21:50:28,669 | INFO | mainscript.py:23 | <module>() | Execution started..
+2026-05-10 21:50:44,872 | INFO | mainscript.py:23 | <module>() | Execution started..
+2026-05-10 21:50:46,284 | INFO | mainscript.py:34 | internshala() | Scraped data from page 1
+2026-05-10 21:50:46,290 | INFO | mainscript.py:36 | internshala() | Inserted data into jobs.db
+2026-05-10 21:50:46,295 | INFO | mainscript.py:38 | internshala() | Inserted data into rawData.db
+2026-05-10 21:50:47,381 | INFO | mainscript.py:34 | internshala() | Scraped data from page 2
+2026-05-10 21:50:47,389 | INFO | mainscript.py:36 | internshala() | Inserted data into jobs.db
+2026-05-10 21:50:47,395 | INFO | mainscript.py:38 | internshala() | Inserted data into rawData.db
+2026-05-10 21:50:48,492 | INFO | mainscript.py:34 | internshala() | Scraped data from page 3
+2026-05-10 21:50:48,500 | INFO | mainscript.py:36 | internshala() | Inserted data into jobs.db
+2026-05-10 21:50:48,505 | INFO | mainscript.py:38 | internshala() | Inserted data into rawData.db
+2026-05-10 21:50:49,659 | INFO | mainscript.py:34 | internshala() | Scraped data from page 4
+2026-05-10 21:50:49,667 | INFO | mainscript.py:36 | internshala() | Inserted data into jobs.db
+2026-05-10 21:50:49,673 | INFO | mainscript.py:38 | internshala() | Inserted data into rawData.db
+2026-05-10 21:50:50,756 | INFO | mainscript.py:34 | internshala() | Scraped data from page 5
+2026-05-10 21:50:50,764 | INFO | mainscript.py:36 | internshala() | Inserted data into jobs.db
+2026-05-10 21:50:50,769 | INFO | mainscript.py:38 | internshala() | Inserted data into rawData.db
+2026-05-10 21:50:51,886 | INFO | mainscript.py:34 | internshala() | Scraped data from page 6
+2026-05-10 21:50:51,893 | INFO | mainscript.py:36 | internshala() | Inserted data into jobs.db
+2026-05-10 21:50:51,898 | INFO | mainscript.py:38 | internshala() | Inserted data into rawData.db
+2026-05-10 21:50:52,990 | INFO | mainscript.py:34 | internshala() | Scraped data from page 7
+2026-05-10 21:50:52,998 | INFO | mainscript.py:36 | internshala() | Inserted data into jobs.db
+2026-05-10 21:50:53,004 | INFO | mainscript.py:38 | internshala() | Inserted data into rawData.db
+2026-05-10 21:50:54,154 | INFO | mainscript.py:34 | internshala() | Scraped data from page 8
+2026-05-10 21:50:54,162 | INFO | mainscript.py:36 | internshala() | Inserted data into jobs.db
+2026-05-10 21:50:54,168 | INFO | mainscript.py:38 | internshala() | Inserted data into rawData.db
+2026-05-10 21:50:55,358 | INFO | mainscript.py:34 | internshala() | Scraped data from page 9
+2026-05-10 21:50:55,364 | INFO | mainscript.py:36 | internshala() | Inserted data into jobs.db
+2026-05-10 21:50:55,370 | INFO | mainscript.py:38 | internshala() | Inserted data into rawData.db
+2026-05-10 21:50:56,461 | INFO | mainscript.py:34 | internshala() | Scraped data from page 10
+2026-05-10 21:50:56,465 | INFO | mainscript.py:36 | internshala() | Inserted data into jobs.db
+2026-05-10 21:50:56,476 | INFO | mainscript.py:38 | internshala() | Inserted data into rawData.db
+2026-05-10 21:50:57,475 | INFO | mainscript.py:34 | internshala() | Scraped data from page 11
+2026-05-10 21:50:57,476 | INFO | mainscript.py:36 | internshala() | Inserted data into jobs.db
+2026-05-10 21:50:57,485 | INFO | mainscript.py:38 | internshala() | Inserted data into rawData.db
+2026-05-10 21:50:58,593 | INFO | mainscript.py:34 | internshala() | Scraped data from page 12
+2026-05-10 21:50:58,593 | INFO | mainscript.py:36 | internshala() | Inserted data into jobs.db
+2026-05-10 21:50:58,600 | INFO | mainscript.py:38 | internshala() | Inserted data into rawData.db
+2026-05-10 21:50:59,638 | INFO | mainscript.py:34 | internshala() | Scraped data from page 13
+2026-05-10 21:50:59,638 | INFO | mainscript.py:36 | internshala() | Inserted data into jobs.db
+2026-05-10 21:50:59,645 | INFO | mainscript.py:38 | internshala() | Inserted data into rawData.db
+2026-05-10 21:51:00,797 | INFO | mainscript.py:34 | internshala() | Scraped data from page 14
+2026-05-10 21:51:00,798 | INFO | mainscript.py:36 | internshala() | Inserted data into jobs.db
+2026-05-10 21:51:00,804 | INFO | mainscript.py:38 | internshala() | Inserted data into rawData.db
+2026-05-10 21:51:02,105 | INFO | mainscript.py:34 | internshala() | Scraped data from page 15
+2026-05-10 21:51:02,105 | INFO | mainscript.py:36 | internshala() | Inserted data into jobs.db
+2026-05-10 21:51:02,113 | INFO | mainscript.py:38 | internshala() | Inserted data into rawData.db
+2026-05-10 21:51:03,281 | INFO | mainscript.py:34 | internshala() | Scraped data from page 16
+2026-05-10 21:51:03,282 | INFO | mainscript.py:36 | internshala() | Inserted data into jobs.db
+2026-05-10 21:51:03,291 | INFO | mainscript.py:38 | internshala() | Inserted data into rawData.db
+2026-05-10 21:51:04,479 | INFO | mainscript.py:34 | internshala() | Scraped data from page 17
+2026-05-10 21:51:04,484 | INFO | mainscript.py:36 | internshala() | Inserted data into jobs.db
+2026-05-10 21:51:04,490 | INFO | mainscript.py:38 | internshala() | Inserted data into rawData.db
+2026-05-10 21:51:05,726 | INFO | mainscript.py:34 | internshala() | Scraped data from page 18
+2026-05-10 21:51:05,732 | INFO | mainscript.py:36 | internshala() | Inserted data into jobs.db
+2026-05-10 21:51:05,739 | INFO | mainscript.py:38 | internshala() | Inserted data into rawData.db
+2026-05-10 21:51:06,891 | INFO | mainscript.py:34 | internshala() | Scraped data from page 19
+2026-05-10 21:51:06,900 | INFO | mainscript.py:36 | internshala() | Inserted data into jobs.db
+2026-05-10 21:51:06,906 | INFO | mainscript.py:38 | internshala() | Inserted data into rawData.db
+2026-05-10 21:51:08,065 | INFO | mainscript.py:34 | internshala() | Scraped data from page 20
+2026-05-10 21:51:08,074 | INFO | mainscript.py:36 | internshala() | Inserted data into jobs.db
+2026-05-10 21:51:08,080 | INFO | mainscript.py:38 | internshala() | Inserted data into rawData.db

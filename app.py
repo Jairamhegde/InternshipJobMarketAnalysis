@@ -141,18 +141,14 @@ def load_dashboard():
     
     with st.sidebar:
         st.markdown("### Navigation")
-        pages = ["Overall Market Trends", "Role-Specific Analysis", "Comparative Analysis","Trends Over Time"]
+        pages = ["Overall Market Trends","Recent Market Trend", "Role-Specific Analysis", "Comparative Analysis","Trends Over Time"]
         if "page" not in st.session_state:
             st.session_state.page = pages[0]
         for i in pages:
             if st.button(i,use_container_width=True):
                 st.session_state.page = i
         page = st.session_state.page
-        # page = st.radio(
-        #     "Select View",
-        #     ["Overall Market Trends", "Role-Specific Analysis", "Comparative Analysis","Trends Over Time"],
-        #     index=0
-        #     )
+   
         
         total_job_count = data['opportunity']
     st.markdown("# Internship Job Market Analysis ")
@@ -343,6 +339,29 @@ def load_dashboard():
             with tab3:
                 st.dataframe(df_locations, use_container_width=True, height=400)
     # PAGE: ROLE-SPECIFIC ANALYSIS 
+    if page == "Recent Market Trend":
+        Role = "Full Stack"
+        Role_count = 10
+        col1,col2,col3 = st.columns(3)
+        with col1:
+            st.metric(
+                label="DEMANDING TECHSTACK",
+                value=Role,
+                delta=30,
+                delta_color="normal"
+            )
+        with col2:
+            st.metric(
+                label="MENTIONED IN",
+                value=Role_count,
+                delta=30,
+                delta_color="normal"
+
+            )
+        st.markdown("##  Role description")
+        st.markdown(f"{Role} is the most demanding techstack  as abtained from the past 2 week data with {Role_count} mentiones")
+
+    
     elif page == "Role-Specific Analysis":
      
         st.subheader("Select a Role to Analyze")

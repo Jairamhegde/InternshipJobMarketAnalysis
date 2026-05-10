@@ -5,3 +5,6 @@ insights/*.csv
 problemsfaced.txt
 *.csv
 ap.py
+dashboard.py
+*.db
+*.sql
